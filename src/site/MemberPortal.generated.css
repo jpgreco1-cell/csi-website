@@ -1,0 +1,10 @@
+
+    body { margin: 0; background: #F4F6F8; }
+    a { color: #2E5F8A; } a:hover { color: #4A9FD4; }
+  
+@media (hover: hover) and (pointer: fine) { .scp0:hover { background: rgba(255,255,255,0.12) !important } }
+@media (hover: hover) and (pointer: fine) { .scp1:hover { color: var(--csi-light-blue) !important } }
+@media (hover: hover) and (pointer: fine) { .scp2:hover { background: var(--csi-light-blue-12) !important } }
+@media (hover: hover) and (pointer: fine) { .scp3:hover { border-color: var(--csi-light-blue) !important; color: var(--csi-light-blue) !important } }
+@media (hover: hover) and (pointer: fine) { .scp4:hover { border-color: var(--csi-light-blue) !important; box-shadow: 0 12px 28px rgba(30,58,95,0.12) !important } }
+@media (hover: hover) and (pointer: fine) { .scp5:hover { background: rgba(255,255,255,0.2) !important } }

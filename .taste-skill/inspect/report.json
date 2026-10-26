@@ -1,0 +1,2396 @@
+{
+ "url": "http://localhost:3000/membership",
+ "at": "2026-10-26T19:34:56.280Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    0.86,
+    0.58,
+    0.9,
+    0.66,
+    0.74,
+    0.6,
+    0.42,
+    0.96
+   ],
+   "motion": {
+    "elements": 6,
+    "css": 5,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 7185,
+     "screens": 8,
+     "words": 1844,
+     "img": 2,
+     "video": 0,
+     "canvas": 0,
+     "svg": 50,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Use one service. Gain a whole team.",
+     "words": 7,
+     "chars": 35,
+     "lines": 2,
+     "size": 54,
+     "vw": 3.8,
+     "font": "Georgia",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.05,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.4,
+     "top": 286,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Use one service. Gain a whole team.",
+     "words": 7,
+     "lines": 2,
+     "size": 54,
+     "font": "Georgia"
+    },
+    "headings": [
+     {
+      "text": "Use one service. Gain a whole team.",
+      "words": 7,
+      "chars": 35,
+      "lines": 2,
+      "size": 54,
+      "vw": 3.8,
+      "font": "Georgia",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.4,
+      "top": 286,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "How membership begins",
+      "words": 3,
+      "chars": 21,
+      "lines": 1,
+      "size": 40,
+      "vw": 2.8,
+      "font": "Georgia",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 915,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Your yearly CSI360™, included.",
+      "words": 4,
+      "chars": 30,
+      "lines": 2,
+      "size": 40,
+      "vw": 2.8,
+      "font": "Georgia",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.39,
+      "top": 1678,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Perks and benefits included with every membership.",
+      "words": 7,
+      "chars": 50,
+      "lines": 2,
+      "size": 46,
+      "vw": 3.2,
+      "font": "Georgia",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.49,
+      "top": 2339,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Start with one service.",
+      "words": 4,
+      "chars": 23,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Montserrat",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 1.14,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.69,
+      "top": 5236,
+      "tag": "h3",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 5,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Montserrat",
+       "share": 0.5,
+       "mono": false
+      },
+      {
+       "family": "Lora",
+       "share": 0.48,
+       "mono": false
+      },
+      {
+       "family": "Georgia",
+       "share": 0.01,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      22,
+      24,
+      30,
+      40,
+      46,
+      54
+     ],
+     "sizeCount": 16,
+     "notLoaded": [],
+     "body": {
+      "font": "Lora",
+      "size": 14.5,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 17.1
+     },
+     "measureChars": 184,
+     "max": {
+      "size": 54,
+      "vw": 3.8,
+      "font": "Georgia",
+      "text": "Use one service. Gain a whole team."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 16,
+     "microLabelShare": 0.03,
+     "microSamples": [
+      "WHAT YOU GET AS A MEMBER",
+      "Complimentary & Commitment-Free!",
+      "At the center",
+      "At the center of membership",
+      "PERKS & BENEFITS",
+      "Become a member"
+     ],
+     "upperShare": 0.04,
+     "centerShare": 0.05,
+     "smallText": 20
+    },
+    "eyebrows": [
+     {
+      "text": "WHAT YOU GET AS A MEMBER",
+      "above": "Use one service. Gain a whole team.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 247
+     },
+     {
+      "text": "At the center of membership",
+      "above": "Your yearly CSI360™, included.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 1642
+     },
+     {
+      "text": "PERKS & BENEFITS",
+      "above": "Perks and benefits included with every m",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 2303
+     },
+     {
+      "text": "Become a member",
+      "above": "Start with one service.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 5203
+     }
+    ],
+    "numbered": [
+     {
+      "text": "01",
+      "size": 15,
+      "top": 1527
+     },
+     {
+      "text": "02",
+      "size": 15,
+      "top": 1607
+     },
+     {
+      "text": "03",
+      "size": 15,
+      "top": 1801
+     },
+     {
+      "text": "04",
+      "size": 15,
+      "top": 1953
+     },
+     {
+      "text": "05",
+      "size": 15,
+      "top": 1953
+     },
+     {
+      "text": "06",
+      "size": 15,
+      "top": 1797
+     },
+     {
+      "text": "07",
+      "size": 15,
+      "top": 1607
+     }
+    ],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#1e3a5f",
+       "top": 123,
+       "hsl": {
+        "h": 214,
+        "s": 0.52,
+        "l": 0.25
+       }
+      },
+      {
+       "color": "#f4f6f8",
+       "top": 2179,
+       "hsl": {
+        "h": 210,
+        "s": 0.22,
+        "l": 0.96
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#ffffff",
+       "share": 0.41
+      },
+      {
+       "color": "#1a1a2e",
+       "share": 0.37
+      },
+      {
+       "color": "#1e3a5f",
+       "share": 0.15
+      },
+      {
+       "color": "#2e5f8a",
+       "share": 0.04
+      },
+      {
+       "color": "#7bb8d4",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": [
+      {
+       "text": "Become a member",
+       "ratio": 2.9,
+       "need": 4.5,
+       "size": 13,
+       "fg": "#4a9fd4",
+       "bg": "#ffffff"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 16,
+     "inHero": 6,
+     "radius": 6,
+     "height": 38,
+     "withShadow": 1,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 2,
+     "heroLabels": [
+      "Skip to content",
+      "FREE HEALTH CHECK",
+      "MEMBER LOGIN",
+      "Book Intro Call",
+      "Book my free intro call"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 20,
+     "shadowOverlay": 2,
+     "shadowSamples": [
+      "span → rgb(255, 255, 255) 0px 0px 0px 5px",
+      "span → rgb(255, 255, 255) 0px 0px 0px 5px",
+      "span → rgb(255, 255, 255) 0px 0px 0px 5px",
+      "span → rgb(255, 255, 255) 0px 0px 0px 5px"
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 60,
+     "hairlineSamples": [
+      "div 1440px",
+      "div 384px",
+      "div 382px",
+      "div 382px",
+      "div 382px"
+     ],
+     "outlinedBoxes": 1,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 10,
+     "boxRadius": 12,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 7,
+     "cardRows": [
+      {
+       "count": 7,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 2546
+      },
+      {
+       "count": 9,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 2667
+      },
+      {
+       "count": 8,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 2644
+      },
+      {
+       "count": 8,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 2667
+      },
+      {
+       "count": 6,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 3856
+      },
+      {
+       "count": 5,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 3880
+      },
+      {
+       "count": 3,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 3856
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 0,
+     "fixed": true,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "lora",
+     "montserrat",
+     "__nextjs-geist"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 7185,
+    "margins": {
+     "left": 120,
+     "right": 125
+    },
+    "sections": [
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 123,
+      "height": 668,
+      "words": 98,
+      "media": 0,
+      "middle": 89,
+      "heading": {
+       "text": "Use one service. Gain a whole team.",
+       "size": 54,
+       "tag": "h1"
+      },
+      "left": 120,
+      "right": 147,
+      "textLeft": 120,
+      "textRight": 336,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 791,
+      "height": 605,
+      "words": 93,
+      "media": 0,
+      "middle": 51,
+      "heading": {
+       "text": "How membership begins",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 120,
+      "right": 128,
+      "textLeft": 120,
+      "textRight": 128,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 1395,
+      "height": 784,
+      "words": 77,
+      "media": 1,
+      "middle": 74,
+      "heading": {
+       "text": "Your yearly CSI360™, included.",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 122,
+      "right": 125,
+      "textLeft": 139,
+      "textRight": 125,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 2179,
+      "height": 2857,
+      "words": 896,
+      "media": 0,
+      "middle": 67,
+      "heading": {
+       "text": "Perks and benefits included with every membership.",
+       "size": 46,
+       "tag": "h2"
+      },
+      "left": 120,
+      "right": 147,
+      "textLeft": 120,
+      "textRight": 147,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 5036,
+      "height": 981,
+      "words": 67,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Start with one service.",
+       "size": 30,
+       "tag": "h3"
+      },
+      "left": 226,
+      "right": 226,
+      "textLeft": 226,
+      "textRight": 361,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 6018,
+      "height": 1167,
+      "words": 613,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 120,
+      "right": 120,
+      "textLeft": 120,
+      "textRight": 120,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Use one service. Gain a whole team.",
+      "size": 54,
+      "top": 286,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 183,
+      "n": 11
+     },
+     {
+      "x": 591,
+      "n": 11
+     },
+     {
+      "x": 999,
+      "n": 10
+     },
+     {
+      "x": 120,
+      "n": 7
+     },
+     {
+      "x": 226,
+      "n": 2
+     },
+     {
+      "x": 756,
+      "n": 2
+     },
+     {
+      "x": 426,
+      "n": 1
+     },
+     {
+      "x": 732,
+      "n": 1
+     },
+     {
+      "x": 1038,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 46,
+    "bodySize": 15,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.21,
+    "voidBox": {
+     "x": 0,
+     "y": 660,
+     "w": 1140,
+     "h": 240
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 11,
+   "filled": [
+    0.93,
+    0.43,
+    0.94,
+    0.37,
+    0.45,
+    0.48,
+    0.42,
+    0.47,
+    0.74,
+    0.92,
+    0.94
+   ],
+   "motion": {
+    "elements": 6,
+    "css": 5,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 10309,
+     "screens": 10.1,
+     "words": 1832,
+     "img": 2,
+     "video": 0,
+     "canvas": 0,
+     "svg": 50,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "☰"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Use one service. Gain a whole team.",
+     "words": 7,
+     "chars": 35,
+     "lines": 2,
+     "size": 39.9,
+     "vw": 5.2,
+     "font": "Georgia",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.05,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.9,
+     "top": 293,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Use one service. Gain a whole team.",
+     "words": 7,
+     "lines": 2,
+     "size": 39.9,
+     "font": "Georgia"
+    },
+    "headings": [
+     {
+      "text": "Use one service. Gain a whole team.",
+      "words": 7,
+      "chars": 35,
+      "lines": 2,
+      "size": 39.9,
+      "vw": 5.2,
+      "font": "Georgia",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 293,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "How membership begins",
+      "words": 3,
+      "chars": 21,
+      "lines": 1,
+      "size": 29.2,
+      "vw": 3.8,
+      "font": "Georgia",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1189,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Your yearly CSI360™, included.",
+      "words": 4,
+      "chars": 30,
+      "lines": 1,
+      "size": 27.6,
+      "vw": 3.6,
+      "font": "Georgia",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.58,
+      "top": 2569,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Perks and benefits included with every membership.",
+      "words": 7,
+      "chars": 50,
+      "lines": 2,
+      "size": 32.3,
+      "vw": 4.2,
+      "font": "Georgia",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.65,
+      "top": 2957,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Start with one service.",
+      "words": 4,
+      "chars": 23,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Montserrat",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 1.14,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 7843,
+      "tag": "h3",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 5,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Montserrat",
+       "share": 0.5,
+       "mono": false
+      },
+      {
+       "family": "Lora",
+       "share": 0.49,
+       "mono": false
+      },
+      {
+       "family": "Georgia",
+       "share": 0.01,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      24,
+      28,
+      29,
+      30,
+      32,
+      40
+     ],
+     "sizeCount": 18,
+     "notLoaded": [],
+     "body": {
+      "font": "Lora",
+      "size": 14.5,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 17.1
+     },
+     "measureChars": 106,
+     "max": {
+      "size": 39.9,
+      "vw": 5.2,
+      "font": "Georgia",
+      "text": "Use one service. Gain a whole team."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 16,
+     "microLabelShare": 0.03,
+     "microSamples": [
+      "WHAT YOU GET AS A MEMBER",
+      "Complimentary & Commitment-Free!",
+      "At the center",
+      "At the center of membership",
+      "PERKS & BENEFITS",
+      "Become a member"
+     ],
+     "upperShare": 0.04,
+     "centerShare": 0.04,
+     "smallText": 21
+    },
+    "eyebrows": [
+     {
+      "text": "WHAT YOU GET AS A MEMBER",
+      "above": "Use one service. Gain a whole team.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 253
+     },
+     {
+      "text": "At the center of membership",
+      "above": "Your yearly CSI360™, included.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 2534
+     },
+     {
+      "text": "PERKS & BENEFITS",
+      "above": "Perks and benefits included with every m",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 2922
+     },
+     {
+      "text": "Become a member",
+      "above": "Start with one service.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 7810
+     }
+    ],
+    "numbered": [
+     {
+      "text": "01",
+      "size": 12,
+      "top": 1964
+     },
+     {
+      "text": "02",
+      "size": 12,
+      "top": 2046
+     },
+     {
+      "text": "03",
+      "size": 12,
+      "top": 2238
+     },
+     {
+      "text": "04",
+      "size": 12,
+      "top": 2390
+     },
+     {
+      "text": "05",
+      "size": 12,
+      "top": 2390
+     },
+     {
+      "text": "06",
+      "size": 12,
+      "top": 2235
+     },
+     {
+      "text": "07",
+      "size": 12,
+      "top": 2046
+     }
+    ],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#1e3a5f",
+       "top": 169,
+       "hsl": {
+        "h": 214,
+        "s": 0.52,
+        "l": 0.25
+       }
+      },
+      {
+       "color": "#f4f6f8",
+       "top": 2838,
+       "hsl": {
+        "h": 210,
+        "s": 0.22,
+        "l": 0.96
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#ffffff",
+       "share": 0.41
+      },
+      {
+       "color": "#1a1a2e",
+       "share": 0.37
+      },
+      {
+       "color": "#1e3a5f",
+       "share": 0.15
+      },
+      {
+       "color": "#2e5f8a",
+       "share": 0.03
+      },
+      {
+       "color": "#7bb8d4",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 17,
+     "inHero": 7,
+     "radius": 6,
+     "height": 43,
+     "withShadow": 1,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 2,
+     "heroLabels": [
+      "Skip to content",
+      "FREE HEALTH CHECK",
+      "MEMBER LOGIN",
+      "Book Intro Call",
+      "☰ Menu"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 13,
+     "shadowOverlay": 2,
+     "shadowSamples": [
+      "span → rgb(255, 255, 255) 0px 0px 0px 5px",
+      "span → rgb(255, 255, 255) 0px 0px 0px 5px",
+      "span → rgb(255, 255, 255) 0px 0px 0px 5px",
+      "span → rgb(255, 255, 255) 0px 0px 0px 5px"
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 60,
+     "hairlineSamples": [
+      "div 768px",
+      "div 691px",
+      "div 689px",
+      "div 689px",
+      "div 689px"
+     ],
+     "outlinedBoxes": 1,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 10,
+     "boxRadius": 12,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 7,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 5145
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": null,
+    "fontsLoaded": [
+     "lora",
+     "montserrat",
+     "__nextjs-geist"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 10309,
+    "margins": {
+     "left": 38,
+     "right": 39
+    },
+    "sections": [
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 169,
+      "height": 936,
+      "words": 98,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Use one service. Gain a whole team.",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 38,
+      "right": 65,
+      "textLeft": 38,
+      "textRight": 147,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 1105,
+      "height": 759,
+      "words": 93,
+      "media": 0,
+      "middle": 40,
+      "heading": {
+       "text": "How membership begins",
+       "size": 29,
+       "tag": "h2"
+      },
+      "left": 38,
+      "right": 40,
+      "textLeft": 38,
+      "textRight": 40,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 1864,
+      "height": 974,
+      "words": 77,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 38,
+      "right": 67,
+      "textLeft": 38,
+      "textRight": 67,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 2838,
+      "height": 4846,
+      "words": 896,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Perks and benefits included with every membership.",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 38,
+      "right": 56,
+      "textLeft": 38,
+      "textRight": 56,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 7683,
+      "height": 948,
+      "words": 67,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Start with one service.",
+       "size": 30,
+       "tag": "h3"
+      },
+      "left": 74,
+      "right": 74,
+      "textLeft": 74,
+      "textRight": 193,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 8631,
+      "height": 1677,
+      "words": 613,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 38,
+      "right": 38,
+      "textLeft": 38,
+      "textRight": 38,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Use one service. Gain a whole team.",
+      "size": 40,
+      "top": 293,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 101,
+      "n": 32
+     },
+     {
+      "x": 38,
+      "n": 10
+     },
+     {
+      "x": 74,
+      "n": 2
+     },
+     {
+      "x": 277,
+      "n": 1
+     },
+     {
+      "x": 515,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 46,
+    "bodySize": 15,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.84,
+    0.71,
+    0.6,
+    0.98,
+    0.59,
+    0.6,
+    0.56,
+    0.51,
+    0.53,
+    0.58,
+    0.6,
+    0.53
+   ],
+   "motion": {
+    "elements": 6,
+    "css": 5,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 14903,
+     "screens": 17.7,
+     "words": 1825,
+     "img": 2,
+     "video": 0,
+     "canvas": 0,
+     "svg": 50,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "☰"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Use one service. Gain a whole team.",
+     "words": 7,
+     "chars": 35,
+     "lines": 2,
+     "size": 31,
+     "vw": 7.9,
+     "font": "Georgia",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.05,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.9,
+     "top": 331,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Use one service. Gain a whole team.",
+     "words": 7,
+     "lines": 2,
+     "size": 31,
+     "font": "Georgia"
+    },
+    "headings": [
+     {
+      "text": "Use one service. Gain a whole team.",
+      "words": 7,
+      "chars": 35,
+      "lines": 2,
+      "size": 31,
+      "vw": 7.9,
+      "font": "Georgia",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 331,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Whatever life brings, you'll never face it alone.",
+      "words": 8,
+      "chars": 49,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Lora",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 620,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "How membership begins",
+      "words": 3,
+      "chars": 21,
+      "lines": 1,
+      "size": 26,
+      "vw": 6.7,
+      "font": "Georgia",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1379,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Your yearly CSI360™, included.",
+      "words": 4,
+      "chars": 30,
+      "lines": 2,
+      "size": 26,
+      "vw": 6.7,
+      "font": "Georgia",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2751,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Perks and benefits included with every membership.",
+      "words": 7,
+      "chars": 50,
+      "lines": 3,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Georgia",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3227,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Start with one service.",
+      "words": 4,
+      "chars": 23,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Montserrat",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 1.14,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.71,
+      "top": 10070,
+      "tag": "h3",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 6,
+     "maxLines": 3,
+     "over2Lines": 1,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Montserrat",
+       "share": 0.5,
+       "mono": false
+      },
+      {
+       "family": "Lora",
+       "share": 0.49,
+       "mono": false
+      },
+      {
+       "family": "Georgia",
+       "share": 0.01,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      24,
+      26,
+      28,
+      30,
+      31
+     ],
+     "sizeCount": 14,
+     "notLoaded": [],
+     "body": {
+      "font": "Lora",
+      "size": 14.5,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 17.1
+     },
+     "measureChars": 54,
+     "max": {
+      "size": 31,
+      "vw": 7.9,
+      "font": "Georgia",
+      "text": "Use one service. Gain a whole team."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 16,
+     "microLabelShare": 0.03,
+     "microSamples": [
+      "WHAT YOU GET AS A MEMBER",
+      "Complimentary & Commitment-Free!",
+      "At the center",
+      "At the center of membership",
+      "PERKS & BENEFITS",
+      "Become a member"
+     ],
+     "upperShare": 0.03,
+     "centerShare": 0.04,
+     "smallText": 14
+    },
+    "eyebrows": [
+     {
+      "text": "WHAT YOU GET AS A MEMBER",
+      "above": "Use one service. Gain a whole team.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 292
+     },
+     {
+      "text": "At the center of membership",
+      "above": "Your yearly CSI360™, included.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 2716
+     },
+     {
+      "text": "PERKS & BENEFITS",
+      "above": "Perks and benefits included with every m",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 3192
+     },
+     {
+      "text": "Become a member",
+      "above": "Start with one service.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 10037
+     }
+    ],
+    "numbered": [
+     {
+      "text": "01",
+      "size": 12,
+      "top": 2340
+     },
+     {
+      "text": "02",
+      "size": 12,
+      "top": 2391
+     },
+     {
+      "text": "03",
+      "size": 12,
+      "top": 2511
+     },
+     {
+      "text": "04",
+      "size": 12,
+      "top": 2606
+     },
+     {
+      "text": "05",
+      "size": 12,
+      "top": 2606
+     },
+     {
+      "text": "06",
+      "size": 12,
+      "top": 2509
+     },
+     {
+      "text": "07",
+      "size": 12,
+      "top": 2391
+     }
+    ],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#1e3a5f",
+       "top": 208,
+       "hsl": {
+        "h": 214,
+        "s": 0.52,
+        "l": 0.25
+       }
+      },
+      {
+       "color": "#f4f6f8",
+       "top": 3108,
+       "hsl": {
+        "h": 210,
+        "s": 0.22,
+        "l": 0.96
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#ffffff",
+       "share": 0.41
+      },
+      {
+       "color": "#1a1a2e",
+       "share": 0.38
+      },
+      {
+       "color": "#1e3a5f",
+       "share": 0.15
+      },
+      {
+       "color": "#2e5f8a",
+       "share": 0.03
+      },
+      {
+       "color": "#7bb8d4",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 16,
+     "inHero": 5,
+     "radius": 6,
+     "height": 44,
+     "withShadow": 1,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 1,
+     "heroLabels": [
+      "Skip to content",
+      "MEMBER LOGIN",
+      "Book Intro Call",
+      "☰ Menu",
+      "Where are you stuck? ›"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 13,
+     "shadowOverlay": 2,
+     "shadowSamples": [
+      "span → rgb(255, 255, 255) 0px 0px 0px 5px",
+      "span → rgb(255, 255, 255) 0px 0px 0px 5px",
+      "span → rgb(255, 255, 255) 0px 0px 0px 5px",
+      "span → rgb(255, 255, 255) 0px 0px 0px 5px"
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 60,
+     "hairlineSamples": [
+      "div 390px",
+      "div 350px",
+      "div 348px",
+      "div 348px",
+      "div 348px"
+     ],
+     "outlinedBoxes": 1,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 9,
+     "boxRadius": 12,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 7,
+     "cardRows": [
+      {
+       "count": 7,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 3516
+      },
+      {
+       "count": 9,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 3637
+      },
+      {
+       "count": 8,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 4915
+      },
+      {
+       "count": 8,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 6096
+      },
+      {
+       "count": 6,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 7278
+      },
+      {
+       "count": 6,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 8175
+      },
+      {
+       "count": 3,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 9115
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": null,
+    "fontsLoaded": [
+     "lora",
+     "montserrat",
+     "__nextjs-geist"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 14903,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "div",
+      "tag": "div",
+      "top": 0,
+      "height": 131,
+      "words": 14,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 81,
+      "textLeft": 20,
+      "textRight": 96,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 208,
+      "height": 1087,
+      "words": 98,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Use one service. Gain a whole team.",
+       "size": 31,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 22,
+      "textLeft": 20,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 1295,
+      "height": 967,
+      "words": 93,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "How membership begins",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 23,
+      "textLeft": 20,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 2262,
+      "height": 847,
+      "words": 77,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Your yearly CSI360™, included.",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 6,
+      "right": 19,
+      "textLeft": 20,
+      "textRight": 19,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 3108,
+      "height": 6802,
+      "words": 896,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Perks and benefits included with every membership.",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 9910,
+      "height": 1343,
+      "words": 67,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Start with one service.",
+       "size": 30,
+       "tag": "h3"
+      },
+      "left": 56,
+      "right": 56,
+      "textLeft": 56,
+      "textRight": 66,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 11254,
+      "height": 3650,
+      "words": 613,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Use one service. Gain a whole team.",
+      "size": 31,
+      "top": 331,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 83,
+      "n": 32
+     },
+     {
+      "x": 20,
+      "n": 12
+     },
+     {
+      "x": 56,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 46,
+    "bodySize": 15,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "4 eyebrow/kicker label(s) above headings: \"WHAT YOU GET AS A MEMBER\" above \"Use one service. Gain a whole team.\"; \"At the center of membership\" above \"Your yearly CSI360™, included.\"; \"PERKS & BENEFITS\" above \"Perks and benefits included with every m\"; \"Become a member\" above \"Start with one service.\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "numbering",
+   "width": 1440,
+   "message": "Decorative index numbers: \"01\", \"02\", \"03\", \"04\", \"05\", \"06\"",
+   "fix": "Remove them. If order truly matters, write it into the words (\"First, …\") or use a real <ol>.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "16 tiny uppercase letter-spaced labels (e.g. \"WHAT YOU GET AS A MEMBER\", \"Complimentary & Commitment-Free!\", \"At the center\", \"At the center of membership\").",
+   "fix": "Use sentence-case text at a readable size, or delete the label.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "shadow",
+   "width": 1440,
+   "message": "20 box-shadow(s) on elements at rest: span → rgb(255, 255, 255) 0px 0px 0px 5px | span → rgb(255, 255, 255) 0px 0px 0px 5px | span → rgb(255, 255, 255) 0px 0px 0px 5px",
+   "fix": "Remove. Separate surfaces with a tone step or space. Shadows are for things that really float (menus, dialogs, sticky bars).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "text-shadow",
+   "width": 1440,
+   "message": "7 text-shadow(s).",
+   "fix": "Remove; fix legibility with a scrim or a different crop.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "button-fx",
+   "width": 1440,
+   "message": "Buttons with shadow/glow.",
+   "fix": "Flat fill, one colour.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "60 thin rule(s)/divider line(s): div 1440px | div 384px | div 382px | div 382px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "1 box(es) drawn with a 1px outline.",
+   "fix": "Prefer a filled surface or no box.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "icon-cards",
+   "width": 1440,
+   "message": "7 row(s) of identical cards each topped with a small icon (7, 9, 8, 8, 6, 5, 3 cards).",
+   "fix": "Replace with one composed section from the direction: a narrative split, a list set in large type, or real imagery per item.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "contrast",
+   "width": 1440,
+   "message": "Low-contrast text: \"Become a member\" 2.9:1 needs 4.5:1",
+   "fix": "Darken or lighten the text colour."
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "16 different font sizes (11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 22, 24, 30, 40, 46, 54).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "body-size",
+   "width": 1440,
+   "message": "Body text is 14.5px (the size most of the running text is set in).",
+   "fix": "Body copy 16–20px. Map small sizes from blueprints onto your body step.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "measure",
+   "width": 1440,
+   "message": "Longest paragraph runs about 184 characters per line.",
+   "fix": "Cap paragraphs at 45–75 characters (max-width: 60ch).",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 1440,
+   "message": "20 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "focal-point",
+   "width": 1440,
+   "message": "The first screen has no dominant element: the largest type is 54px (3.8vw) and no single picture holds a third of the viewport.",
+   "fix": "Make one thing lead: the headline at display size, or one large picture. A grid of many small pictures is not one thing; in blind tests jurors marked a first screen without a headline down every time. On the strongest studied sites the largest type has a median of 8.4vw."
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 6 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  },
+  {
+   "level": "FAIL",
+   "id": "emoji",
+   "width": 768,
+   "message": "Emoji in the page: ☰",
+   "fix": "Remove. Use words or real imagery.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 390,
+   "message": "1 headline(s) wrap past two lines at 390px: \"Perks and benefits included with every membershi\" → 3 lines (7 words, 28px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 24px or less."
+  },
+  {
+   "level": "FAIL",
+   "id": "covered-text",
+   "width": 390,
+   "message": "Large text lies under another element at some scroll position: \"Perks and benefits included with every membershi\" (screen 4, 33% hidden); \"Start with one service.\" (screen 12, 75% hidden)",
+   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\jgreco\\OneDrive - CSICPA\\CLAUDE\\csi-website\\.taste-skill\\inspect\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\jgreco\\OneDrive - CSICPA\\CLAUDE\\csi-website\\.taste-skill\\inspect\\desktop-page-01.jpg",
+    "C:\\Users\\jgreco\\OneDrive - CSICPA\\CLAUDE\\csi-website\\.taste-skill\\inspect\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\jgreco\\OneDrive - CSICPA\\CLAUDE\\csi-website\\.taste-skill\\inspect\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\jgreco\\OneDrive - CSICPA\\CLAUDE\\csi-website\\.taste-skill\\inspect\\tablet-page-01.jpg",
+    "C:\\Users\\jgreco\\OneDrive - CSICPA\\CLAUDE\\csi-website\\.taste-skill\\inspect\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\jgreco\\OneDrive - CSICPA\\CLAUDE\\csi-website\\.taste-skill\\inspect\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\jgreco\\OneDrive - CSICPA\\CLAUDE\\csi-website\\.taste-skill\\inspect\\mobile-page-01.jpg",
+    "C:\\Users\\jgreco\\OneDrive - CSICPA\\CLAUDE\\csi-website\\.taste-skill\\inspect\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

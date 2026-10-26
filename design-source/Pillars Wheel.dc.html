@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/tokens/base.css">
+  <link rel="stylesheet" href="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/styles.css">
+  <script src="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/_ds_bundle.js"></script>
+</helmet>
+<div data-om-raster="1" style="position: relative; width: 100%; max-width: 560px; aspect-ratio: 1 / 1; margin: 0 auto">
+  <svg viewBox="0 0 100 100" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible">
+    <circle cx="50" cy="50" r="40" fill="none" stroke="#4A9FD4" stroke-width="0.5" stroke-opacity="0.7"></circle>
+    <circle cx="50" cy="50" r="46" fill="none" stroke="#7BB8D4" stroke-width="0.25" stroke-opacity="0.45" stroke-dasharray="1 1.6"></circle>
+    <sc-for list="{{ web }}" as="ln" hint-placeholder-count="21">
+      <line x1="{{ ln.x1 }}" y1="{{ ln.y1 }}" x2="{{ ln.x2 }}" y2="{{ ln.y2 }}" stroke="{{ webColor }}" stroke-width="{{ ln.w }}" stroke-opacity="{{ ln.o }}"></line>
+    </sc-for>
+    <sc-for list="{{ nodes }}" as="pn" hint-placeholder-count="7">
+      <line x1="50" y1="50" x2="{{ pn.x }}" y2="{{ pn.y }}" stroke="#4A9FD4" stroke-width="{{ pn.spokeW }}" stroke-opacity="{{ pn.spokeO }}"></line>
+    </sc-for>
+  </svg>
+  <div style="{{ centerStyle }}">
+    <p style="font-family: var(--font-display); font-size: clamp(9px, 1vw, 11px); font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--csi-mid-blue); margin: 0 0 4px">{{ kicker }}</p>
+    <p style="font-family: Georgia, 'Times New Roman', serif; font-weight: 700; font-size: clamp(15px, 2vw, 22px); line-height: 1.12; color: var(--csi-navy); margin: 0">{{ title }}</p>
+    <p style="font-family: var(--font-serif); font-size: clamp(10px, 1.05vw, 12.5px); line-height: 1.4; color: var(--csi-ink); margin: 6px 0 0">{{ body }}</p>
+  </div>
+  <sc-for list="{{ nodes }}" as="pn" hint-placeholder-count="7">
+    <button onMouseEnter="{{ pn.enter }}" onFocus="{{ pn.enter }}" onMouseLeave="{{ pn.leave }}" onBlur="{{ pn.leave }}" onClick="{{ pn.enter }}" aria-label="{{ pn.title }}" style="{{ pn.pos }}">
+      <span style="{{ pn.dot }}">{{ pn.num }}</span>
+      <span style="{{ labelStyle }}">{{ pn.title }}</span>
+    </button>
+  </sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:600,&quot;height&quot;:600},&quot;tone&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;navy&quot;,&quot;light&quot;],&quot;default&quot;:&quot;navy&quot;,&quot;tsType&quot;:&quot;'navy' | 'light'&quot;}}">
+class Component extends DCLogic {
+  state = { active: null };
+  renderVals() {
+    const dark = (this.props.tone ?? 'navy') === 'navy';
+    const P = [['01', 'Tax Strategy', 'What you owe this year, and the next ten.'], ['02', 'Retirement Income', 'Which account first, and when Social Security starts.'], ['03', 'Investments', 'Allocation and placement, read against your taxes.'], ['04', 'Insurance & Risk', 'What happens if one income stops tomorrow.'], ['05', 'Estate & Legacy', 'Wills, beneficiaries and titles that agree.'], ['06', 'Cash Flow & Debt', 'What comes in, what goes out, what it costs.'], ['07', 'Family & Next Gen', 'Aging parents, adult kids, tuition, what you leave.']];
+    const act = this.state.active;
+    const pts = P.map((p, i) => { const a = -Math.PI / 2 + i * 2 * Math.PI / P.length; return { x: +(50 + 40 * Math.cos(a)).toFixed(2), y: +(50 + 40 * Math.sin(a)).toFixed(2) }; });
+    const web = [];
+    for (let i = 0; i < P.length; i++) for (let j = i + 1; j < P.length; j++) {
+      const on = act === i || act === j;
+      web.push({ x1: pts[i].x, y1: pts[i].y, x2: pts[j].x, y2: pts[j].y, w: on ? 0.45 : 0.2, o: on ? 0.8 : (dark ? 0.22 : 0.45) });
+    }
+    const nodes = P.map(([num, title], i) => {
+      const on = act === i;
+      return {
+        num, title, x: pts[i].x, y: pts[i].y, spokeW: on ? 0.9 : 0.5, spokeO: on ? 1 : 0.55,
+        enter: () => this.setState({ active: i }), leave: () => this.setState({ active: null }),
+        pos: { position: 'absolute', left: pts[i].x + '%', top: pts[i].y + '%', transform: 'translate(-50%, -22%)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, background: 'none', border: 0, padding: 0, cursor: 'pointer' },
+        dot: { width: 'clamp(38px, 4.6vw, 52px)', height: 'clamp(38px, 4.6vw, 52px)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 'calc(clamp(38px, 4.6vw, 52px) / -2)', fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 'clamp(12px, 1.3vw, 15px)', background: on ? 'var(--csi-light-blue)' : 'var(--csi-navy)', color: 'var(--csi-white)', border: '2px solid var(--csi-light-blue)', boxShadow: on ? '0 0 0 6px rgba(74,159,212,0.28)' : '0 6px 16px rgba(10,24,42,0.3)', transition: 'background 200ms var(--ease-out), box-shadow 200ms var(--ease-out)' }
+      };
+    });
+    const a = act == null ? null : P[act];
+    return {
+      nodes, web,
+      webColor: dark ? '#7BB8D4' : '#4A9FD4',
+      centerStyle: { position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', width: '36%', height: '36%', borderRadius: '50%', background: 'var(--csi-white)', boxShadow: dark ? '0 0 0 8px rgba(74,159,212,0.18), 0 18px 44px rgba(10,24,42,0.4)' : '0 0 0 8px rgba(74,159,212,0.14), 0 14px 36px rgba(30,58,95,0.18)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '6%', boxSizing: 'border-box' },
+      labelStyle: { fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(11px, 1.25vw, 14px)', lineHeight: 1.2, color: dark ? 'var(--csi-white)' : 'var(--csi-navy)', textAlign: 'center', maxWidth: '13ch', textShadow: dark ? '0 1px 8px rgba(10,24,42,0.6)' : 'none' },
+      kicker: a ? 'Pillar ' + a[0] : 'At the center',
+      title: a ? a[1] : 'Your family',
+      body: a ? a[2] : 'Seven pillars, one team, all connected.'
+    };
+  }
+}
+</script>
+</body>
+</html>

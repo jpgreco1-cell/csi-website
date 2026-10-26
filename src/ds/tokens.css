@@ -1,0 +1,221 @@
+/* tokens/fonts.css */
+/* CSI Group — Webfonts
+   Montserrat (structure) + Lora (warmth), loaded from Google Fonts per brand standard.
+   Montserrat 300/400/700/800/900 · Lora 400/400italic/700 */
+
+
+/* tokens/colors.css */
+/* CSI Group — Color tokens
+   "Blue only. No gold, no charcoal, no invented palettes."
+   Four brand blues + functional neutrals. Disclosure gray is for legal text ONLY. */
+:root {
+  /* ---- Core brand blues ---- */
+  --csi-navy: #1E3A5F;        /* Primary — headlines, dark backgrounds, logo text */
+  --csi-mid-blue: #2E5F8A;    /* Secondary headers, section fills */
+  --csi-light-blue: #4A9FD4;  /* Accent — italic text, divider rules, highlights */
+  --csi-sky-blue: #7BB8D4;    /* Gradients, decorative shapes */
+
+  /* ---- Neutrals & functional ---- */
+  --csi-white: #FFFFFF;       /* Body text on dark, section backgrounds */
+  --csi-light-gray: #F4F6F8;  /* Page backgrounds, alternating sections */
+  --csi-ink: #1A1A2E;         /* Body copy on light backgrounds */
+  --csi-disclosure: #6B7280;  /* Legal / disclosure text ONLY */
+
+  /* ---- Tints derived inside the navy → sky range (for fills, borders, hovers) ---- */
+  --csi-navy-90: #2A4A72;     /* Navy hover/raised */
+  --csi-navy-80: #35567E;
+  --csi-light-blue-12: rgba(74, 159, 212, 0.12);  /* tinted accent surface */
+  --csi-light-blue-24: rgba(74, 159, 212, 0.24);  /* accent border */
+  --csi-sky-16: rgba(123, 184, 212, 0.16);
+  --csi-hairline: rgba(30, 58, 95, 0.12);          /* navy hairline on light */
+  --csi-hairline-on-navy: rgba(255, 255, 255, 0.16);
+
+  /* ---- Semantic surface aliases ---- */
+  --surface-page: var(--csi-light-gray);
+  --surface-card: var(--csi-white);
+  --surface-inverse: var(--csi-navy);
+  --surface-fill: var(--csi-mid-blue);
+
+  /* ---- Semantic text aliases ---- */
+  --text-heading: var(--csi-navy);
+  --text-body: var(--csi-ink);
+  --text-on-inverse: var(--csi-white);
+  --text-accent: var(--csi-light-blue);
+  --text-disclosure: var(--csi-disclosure);
+
+  /* ---- Borders & rules ---- */
+  --rule-accent: var(--csi-light-blue);
+  --rule-hairline: var(--csi-hairline);
+
+  /* ---- The one approved gradient: navy → sky-blue ---- */
+  --csi-gradient-brand: linear-gradient(135deg, var(--csi-navy) 0%, var(--csi-mid-blue) 55%, var(--csi-sky-blue) 100%);
+}
+
+/* tokens/typography.css */
+/* CSI Group — Typography tokens
+   Montserrat for structure. Lora for warmth.
+   Headlines: Montserrat 800–900. Subheads: Montserrat 300–400 (lighter weight makes the contrast).
+   Body: Lora 400. Taglines & signatures: Lora italic, light blue. Disclosure: 6–7pt. */
+:root {
+  /* ---- Families ---- */
+  --font-display: 'Montserrat', system-ui, sans-serif;   /* headlines, subheads, UI, disclosure */
+  --font-serif: 'Lora', Georgia, 'Times New Roman', serif; /* body, taglines, signatures */
+
+  /* ---- Weights ---- */
+  --weight-light: 300;     /* subheads */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-heavy: 800;     /* headlines */
+  --weight-black: 900;     /* hero headlines */
+
+  /* ---- Type scale (screen, 1200px landing / 1280px slide context) ---- */
+  --text-hero: 64px;       /* Montserrat 900 — hero headline */
+  --text-h1: 44px;         /* Montserrat 800 */
+  --text-h2: 32px;         /* Montserrat 800 */
+  --text-h3: 24px;         /* Montserrat 700 */
+  --text-subhead: 22px;    /* Montserrat 300 — the light counterweight */
+  --text-lead: 20px;       /* Lora 400 lead paragraph */
+  --text-body: 17px;       /* Lora 400 body */
+  --text-small: 14px;      /* Montserrat 400 labels / UI */
+  --text-eyebrow: 12px;    /* Montserrat 600, tracked, uppercase section label */
+  --text-disclosure: 11px; /* ~7pt disclosure */
+
+  /* ---- Line heights ---- */
+  --leading-tight: 1.04;   /* hero / headlines */
+  --leading-snug: 1.2;     /* subheads */
+  --leading-body: 1.6;     /* Lora body — comfortable reading */
+  --leading-disclosure: 1.45;
+
+  /* ---- Letter spacing ---- */
+  --tracking-eyebrow: 0.18em;  /* uppercase section labels & "CLICK TO COPY" style microtype */
+  --tracking-headline: -0.01em;
+  --tracking-normal: 0;
+}
+
+/* tokens/spacing.css */
+/* CSI Group — Spacing, radii, shadows, layout
+   Print-rooted brand (8.5x11, three-band structure). Restrained, document-like. */
+:root {
+  /* ---- Spacing scale (4px base) ---- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+
+  /* ---- Radii — modest. Cards and inputs are squared-off and document-like. ---- */
+  --radius-xs: 3px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+
+  /* ---- Borders ---- */
+  --border-hairline: 1px solid var(--rule-hairline);
+  --border-accent: 1px solid var(--csi-light-blue-24);
+  --rule-thin-accent: 3px solid var(--csi-light-blue);  /* the signature thin blue rule */
+
+  /* ---- Shadows — soft, cool-tinted, never heavy ---- */
+  --shadow-sm: 0 1px 2px rgba(30, 58, 95, 0.06);
+  --shadow-md: 0 4px 14px rgba(30, 58, 95, 0.08);
+  --shadow-lg: 0 14px 40px rgba(30, 58, 95, 0.12);
+  --shadow-focus: 0 0 0 3px var(--csi-light-blue-24);
+
+  /* ---- Layout ---- */
+  --page-max: 1200px;   /* landing page max width */
+  --slide-w: 1280px;    /* 16:9 slide */
+  --slide-h: 720px;
+  --band-pad-y: var(--space-9);
+  --content-pad-x: var(--space-7);
+
+  /* ---- Motion — restrained, professional. Fades & gentle eases, no bounce. ---- */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1); /* @kind other */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --dur-fast: 140ms; /* @kind other */
+  --dur-base: 220ms; /* @kind other */
+  --dur-slow: 360ms; /* @kind other */
+}
+
+/* tokens/base.css */
+/* CSI Group — Base element styling & utility primitives.
+   Lightweight reset + brand defaults so any consuming page inherits the voice. */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  color: var(--text-body);
+  background: var(--surface-page);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Headings — Montserrat, navy, tight */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--text-heading);
+  letter-spacing: var(--tracking-headline);
+  line-height: var(--leading-tight);
+  margin: 0 0 var(--space-4);
+  text-wrap: balance;
+}
+h1 { font-size: var(--text-h1); font-weight: var(--weight-heavy); }
+h2 { font-size: var(--text-h2); font-weight: var(--weight-heavy); }
+h3 { font-size: var(--text-h3); font-weight: var(--weight-bold); line-height: var(--leading-snug); }
+
+p { margin: 0 0 var(--space-4); text-wrap: pretty; }
+a { color: var(--csi-mid-blue); text-decoration: none; }
+a:hover { color: var(--csi-light-blue); }
+
+/* ---- Brand utility classes ---- */
+
+/* Eyebrow / section label — "0 1 — F O U N D A T I O N" microtype */
+.csi-eyebrow {
+  font-family: var(--font-display);
+  font-size: var(--text-eyebrow);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--csi-mid-blue);
+}
+
+/* Hero / headline scales */
+.csi-hero { font-family: var(--font-display); font-weight: var(--weight-black); font-size: var(--text-hero); color: var(--text-heading); line-height: var(--leading-tight); letter-spacing: var(--tracking-headline); }
+
+/* The light-weight subhead that counterweights a heavy headline */
+.csi-subhead { font-family: var(--font-display); font-weight: var(--weight-light); font-size: var(--text-subhead); color: var(--text-heading); line-height: var(--leading-snug); }
+
+/* Lora italic, light blue — taglines & brand signatures ONLY */
+.csi-tagline { font-family: var(--font-serif); font-style: italic; font-weight: var(--weight-regular); color: var(--csi-light-blue); }
+
+/* Disclosure — 6–7pt, disclosure gray */
+.csi-disclosure { font-family: var(--font-display); font-size: var(--text-disclosure); line-height: var(--leading-disclosure); color: var(--text-disclosure); font-weight: var(--weight-regular); }
+
+/* The signature thin light-blue rule */
+.csi-rule { border: 0; border-top: var(--rule-thin-accent); width: 64px; margin: var(--space-4) 0; }
+.csi-rule--full { width: 100%; border-top: 1px solid var(--rule-hairline); }
+
+/* Checkmark list — ✓ in light blue, the brand's DO marker */
+.csi-checklist { list-style: none; padding: 0; margin: 0; }
+.csi-checklist li { position: relative; padding-left: var(--space-6); margin-bottom: var(--space-3); }
+.csi-checklist li::before {
+  content: '✓';
+  position: absolute; left: 0; top: 0;
+  color: var(--csi-light-blue);
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+}
+
+/* Navy band — the brand's top/footer band */
+.csi-band-navy { background: var(--csi-navy); color: var(--csi-white); }
+.csi-band-navy h1, .csi-band-navy h2, .csi-band-navy h3 { color: var(--csi-white); }

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/tokens/base.css">
+  <link rel="stylesheet" href="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/styles.css">
+  <script src="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/_ds_bundle.js"></script>
+  <style>
+    body { margin: 0; background: #F4F6F8; }
+    a { color: #2E5F8A; } a:hover { color: #4A9FD4; }
+  </style>
+</helmet>
+<div data-screen-label="Member Portal: Home" style="min-height: 100vh; background: var(--csi-light-gray); font-family: var(--font-serif); color: var(--csi-ink); display: grid; grid-template-rows: auto 1fr">
+  <header style="background: var(--csi-navy); color: var(--csi-white); padding: 0 clamp(16px, 3vw, 32px); display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; flex-wrap: wrap; row-gap: 6px; padding-top: 8px; padding-bottom: 8px; border-bottom: 3px solid var(--csi-light-blue)">
+    <div style="display: flex; align-items: center; gap: 28px; min-width: 0">
+      <img src="assets/logos/CSIGroupLogo_2025_white.png" alt="CSI Group" style="height: 30px; width: auto; display: block">
+      <nav style="{{ navStyle }}" aria-label="Portal">
+        <sc-for list="{{ nav }}" as="n" hint-placeholder-count="6">
+          <button onClick="{{ n.go }}" style="{{ n.style }}"><span style="white-space: nowrap">{{ n.label }}</span></button>
+        </sc-for>
+      </nav>
+    </div>
+    <div style="display: flex; align-items: center; gap: 14px">
+      <button aria-label="Notifications" style="position: relative; width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); color: var(--csi-white); cursor: pointer; display: flex; align-items: center; justify-content: center">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"></path></svg>
+        <span style="position: absolute; top: 6px; right: 7px; width: 9px; height: 9px; border-radius: 50%; background: var(--csi-light-blue); border: 2px solid var(--csi-navy)"></span>
+      </button>
+      <div style="display: flex; align-items: center; gap: 10px">
+        <span style="width: 38px; height: 38px; border-radius: 50%; background: var(--csi-light-blue); color: var(--csi-white); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 800; font-size: 14px">MR</span>
+        <span style="{{ nameStyle }}">The Rivera Family</span>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding: clamp(20px, 3vw, 36px) clamp(16px, 3vw, 32px) 64px; max-width: 1360px; width: 100%; margin: 0 auto; box-sizing: border-box; display: grid; gap: 22px">
+
+    <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 22px; align-items: stretch">
+      <div style="background: var(--csi-navy); color: var(--csi-white); border-radius: 12px; padding: clamp(22px, 2.6vw, 32px); display: grid; gap: 14px; align-content: start; grid-column: span 2; min-width: 0">
+        <p style="font-family: var(--font-display); font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--csi-sky-blue); margin: 0">{{ greetingDate }}</p>
+        <h1 style="font-family: Georgia, 'Times New Roman', serif; font-weight: 700; font-size: clamp(24px, 3vw, 34px); line-height: 1.12; margin: 0; color: var(--csi-white)">Good morning, Maria. Three things need you this month.</h1>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 10px; margin-top: 6px">
+          <sc-for list="{{ todos }}" as="t" hint-placeholder-count="3">
+            <button onClick="{{ t.go }}" style="text-align: left; cursor: pointer; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.16); border-left: 3px solid var(--csi-light-blue); border-radius: 8px; padding: 14px 14px; display: grid; gap: 4px; color: var(--csi-white)" style-hover="background: rgba(255,255,255,0.12)">
+              <span style="font-family: var(--font-display); font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--csi-sky-blue)">{{ t.due }}</span>
+              <span style="font-family: var(--font-display); font-weight: 700; font-size: 15px; line-height: 1.25">{{ t.title }}</span>
+              <span style="font-family: var(--font-serif); font-size: 13px; color: rgba(255,255,255,0.8)">{{ t.body }}</span>
+            </button>
+          </sc-for>
+        </div>
+      </div>
+
+      <div style="background: var(--csi-white); border-top: 3px solid var(--csi-light-blue); border-radius: 12px; box-shadow: 0 8px 24px rgba(30,58,95,0.08); padding: 22px 22px 18px; display: grid; gap: 10px; align-content: start; min-width: 0">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px">
+          <p style="font-family: var(--font-display); font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--csi-mid-blue); margin: 0">Financial Health Score</p>
+          <span style="font-family: var(--font-display); font-size: 11px; font-weight: 700; color: var(--csi-light-blue)">+6 since March</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 110px 1fr; gap: 16px; align-items: center">
+          <div style="position: relative; width: 110px; height: 110px">
+            <svg viewBox="0 0 120 120" style="width: 110px; height: 110px; transform: rotate(-90deg)" aria-hidden="true">
+              <circle cx="60" cy="60" r="50" fill="none" stroke="#E6EBF0" stroke-width="12"></circle>
+              <circle cx="60" cy="60" r="50" fill="none" stroke="#4A9FD4" stroke-width="12" stroke-linecap="round" stroke-dasharray="314" stroke-dashoffset="{{ scoreOffset }}" style="transition: stroke-dashoffset 900ms var(--ease-out)"></circle>
+            </svg>
+            <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center">
+              <span style="font-family: var(--font-display); font-weight: 800; font-size: 30px; line-height: 1; color: var(--csi-navy)">{{ score }}</span>
+              <span style="font-family: var(--font-display); font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--csi-mid-blue)">of 100</span>
+            </div>
+          </div>
+          <div style="display: grid; gap: 7px">
+            <sc-for list="{{ pillars }}" as="p" hint-placeholder-count="7">
+              <div style="display: grid; grid-template-columns: 1fr auto; gap: 6px; align-items: center">
+                <span style="font-family: var(--font-display); font-size: 11px; font-weight: 700; color: var(--csi-navy); white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{ p.name }}</span>
+                <span style="display: block; width: 72px; height: 5px; border-radius: 3px; background: #E6EBF0; overflow: hidden"><span style="{{ p.bar }}"></span></span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <button style="justify-self: start; font-family: var(--font-display); font-weight: 700; font-size: 12px; color: var(--csi-mid-blue); background: none; border: 0; padding: 0; cursor: pointer" style-hover="color: var(--csi-light-blue)">Open my Financial Health Report ›</button>
+      </div>
+    </section>
+
+    <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 22px; align-items: start">
+      <div style="background: var(--csi-white); border-radius: 12px; box-shadow: 0 8px 24px rgba(30,58,95,0.08); padding: 22px; display: grid; gap: 14px; grid-column: span 2; min-width: 0">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap">
+          <div>
+            <p style="font-family: var(--font-display); font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--csi-mid-blue); margin: 0 0 4px">Your whole picture</p>
+            <p style="font-family: var(--font-display); font-weight: 800; font-size: 26px; color: var(--csi-navy); margin: 0">$1,284,600 <span style="font-family: var(--font-serif); font-weight: 400; font-size: 14px; color: var(--csi-mid-blue)">net worth · updated today</span></p>
+          </div>
+          <div style="display: flex; gap: 6px">
+            <sc-for list="{{ ranges }}" as="r" hint-placeholder-count="4">
+              <button onClick="{{ r.go }}" style="{{ r.style }}">{{ r.label }}</button>
+            </sc-for>
+          </div>
+        </div>
+        <svg viewBox="0 0 600 160" preserveAspectRatio="none" aria-label="Net worth trend" style="display: block; width: 100%; height: 150px">
+          <defs><linearGradient id="nw" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#4A9FD4" stop-opacity="0.35"></stop><stop offset="1" stop-color="#4A9FD4" stop-opacity="0"></stop></linearGradient></defs>
+          <path d="{{ areaPath }}" fill="url(#nw)"></path>
+          <path d="{{ linePath }}" fill="none" stroke="#2E5F8A" stroke-width="2.5" vector-effect="non-scaling-stroke"></path>
+          <sc-for list="{{ gridLines }}" as="g" hint-placeholder-count="3">
+            <line x1="0" x2="600" y1="{{ g }}" y2="{{ g }}" stroke="#E6EBF0" stroke-width="1" vector-effect="non-scaling-stroke"></line>
+          </sc-for>
+        </svg>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px">
+          <sc-for list="{{ accounts }}" as="a" hint-placeholder-count="5">
+            <div style="background: var(--csi-light-gray); border-radius: 8px; padding: 12px 14px; display: grid; gap: 2px; border-left: 3px solid var(--csi-light-blue)">
+              <span style="font-family: var(--font-display); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--csi-mid-blue)">{{ a.kind }}</span>
+              <span style="font-family: var(--font-display); font-weight: 800; font-size: 17px; color: var(--csi-navy)">{{ a.value }}</span>
+              <span style="font-family: var(--font-serif); font-size: 12px; color: var(--csi-ink)">{{ a.name }}</span>
+            </div>
+          </sc-for>
+          <button style="background: var(--csi-white); border: 1px dashed var(--csi-light-blue); border-radius: 8px; padding: 12px 14px; cursor: pointer; font-family: var(--font-display); font-weight: 700; font-size: 13px; color: var(--csi-mid-blue); text-align: left" style-hover="background: var(--csi-light-blue-12)">+ Link an account</button>
+        </div>
+      </div>
+
+      <div style="background: var(--csi-white); border-top: 3px solid var(--csi-light-blue); border-radius: 12px; box-shadow: 0 8px 24px rgba(30,58,95,0.08); padding: 22px; display: grid; gap: 14px; align-content: start; min-width: 0">
+        <p style="font-family: var(--font-display); font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--csi-mid-blue); margin: 0">Your CSI360™ Team</p>
+        <div style="display: grid; gap: 10px">
+          <sc-for list="{{ team }}" as="m" hint-placeholder-count="5">
+            <div style="display: grid; grid-template-columns: 40px 1fr auto; gap: 12px; align-items: center">
+              <span style="{{ m.avatar }}">{{ m.initials }}</span>
+              <span style="display: grid; gap: 1px; min-width: 0">
+                <span style="font-family: var(--font-display); font-weight: 700; font-size: 14px; color: var(--csi-navy); white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{ m.name }}</span>
+                <span style="font-family: var(--font-serif); font-size: 12px; color: var(--csi-mid-blue)">{{ m.role }}</span>
+              </span>
+              <button aria-label="Message" style="width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--csi-hairline); background: var(--csi-white); color: var(--csi-mid-blue); cursor: pointer; display: flex; align-items: center; justify-content: center" style-hover="border-color: var(--csi-light-blue); color: var(--csi-light-blue)">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+              </button>
+            </div>
+          </sc-for>
+        </div>
+        <div style="display: grid; gap: 8px; margin-top: 4px">
+          <x-import component-from-global-scope="CSIGroupDesignSystem_49d96c.Button" variant="primary" size="md" dc-props="{{ btnFull }}" hint-size="100%,46px">Book time with my team</x-import>
+          <x-import component-from-global-scope="CSIGroupDesignSystem_49d96c.Button" variant="outline" size="md" dc-props="{{ btnFull }}" hint-size="100%,46px">Message Dana</x-import>
+        </div>
+        <div style="background: var(--csi-light-gray); border-radius: 8px; padding: 12px 14px; display: grid; gap: 3px">
+          <span style="font-family: var(--font-display); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--csi-mid-blue)">Next appointment</span>
+          <span style="font-family: var(--font-display); font-weight: 700; font-size: 14px; color: var(--csi-navy)">Tue, Nov 4 · 10:00 AM · Wall Township</span>
+          <span style="font-family: var(--font-serif); font-size: 12.5px; color: var(--csi-ink)">Year-end tax moves with Dana. Video link ready.</span>
+        </div>
+      </div>
+    </section>
+
+    <section style="display: grid; gap: 14px">
+      <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap">
+        <h2 style="font-family: Georgia, 'Times New Roman', serif; font-weight: 700; font-size: 22px; color: var(--csi-navy); margin: 0">Tools and calculators</h2>
+        <span style="font-family: var(--font-serif); font-size: 14px; color: var(--csi-mid-blue)">Pre-filled with your real numbers. Results go straight to your team.</span>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)); gap: 12px">
+        <sc-for list="{{ tools }}" as="tl" hint-placeholder-count="8">
+          <button style="text-align: left; cursor: pointer; background: var(--csi-white); border: 1px solid var(--csi-hairline); border-radius: 10px; padding: 16px 16px 14px; display: grid; gap: 8px; align-content: start; box-shadow: 0 6px 16px rgba(30,58,95,0.06); transition: box-shadow 200ms var(--ease-out), border-color 200ms var(--ease-out)" style-hover="border-color: var(--csi-light-blue); box-shadow: 0 12px 28px rgba(30,58,95,0.12)">
+            <span style="width: 38px; height: 38px; border-radius: 10px; background: var(--csi-navy); color: var(--csi-white); display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" dangerouslySetInnerHTML="{{ tl.svg }}"></svg></span>
+            <span style="font-family: var(--font-display); font-weight: 700; font-size: 14px; line-height: 1.25; color: var(--csi-navy)">{{ tl.title }}</span>
+            <span style="font-family: var(--font-serif); font-size: 12.5px; line-height: 1.45; color: var(--csi-ink)">{{ tl.body }}</span>
+          </button>
+        </sc-for>
+      </div>
+    </section>
+
+    <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 22px; align-items: start">
+      <div style="background: var(--csi-white); border-radius: 12px; box-shadow: 0 8px 24px rgba(30,58,95,0.08); padding: 22px; display: grid; gap: 12px; min-width: 0">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px">
+          <p style="font-family: var(--font-display); font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--csi-mid-blue); margin: 0">Documents and vault</p>
+          <button style="font-family: var(--font-display); font-weight: 700; font-size: 12px; color: var(--csi-mid-blue); background: none; border: 0; padding: 0; cursor: pointer">Upload ›</button>
+        </div>
+        <div style="display: grid; gap: 8px">
+          <sc-for list="{{ docs }}" as="d" hint-placeholder-count="4">
+            <div style="display: grid; grid-template-columns: 34px 1fr auto; gap: 12px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--csi-hairline)">
+              <span style="width: 34px; height: 34px; border-radius: 6px; background: var(--csi-light-gray); color: var(--csi-mid-blue); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 800; font-size: 10px">{{ d.ext }}</span>
+              <span style="display: grid; gap: 1px; min-width: 0">
+                <span style="font-family: var(--font-display); font-weight: 700; font-size: 14px; color: var(--csi-navy); white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{ d.name }}</span>
+                <span style="font-family: var(--font-serif); font-size: 12px; color: var(--csi-mid-blue)">{{ d.meta }}</span>
+              </span>
+              <span style="{{ d.tag }}">{{ d.status }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <div style="background: var(--csi-light-gray); border: 1px dashed var(--csi-light-blue); border-radius: 8px; padding: 14px; text-align: center; font-family: var(--font-serif); font-size: 13.5px; color: var(--csi-mid-blue)">Drop your 2026 W-2s and 1099s here. Dana is notified the moment they land.</div>
+      </div>
+
+      <div style="background: var(--csi-white); border-radius: 12px; box-shadow: 0 8px 24px rgba(30,58,95,0.08); padding: 22px; display: grid; gap: 12px; min-width: 0">
+        <p style="font-family: var(--font-display); font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--csi-mid-blue); margin: 0">Your plan, this year</p>
+        <div style="display: grid; gap: 0">
+          <sc-for list="{{ timeline }}" as="ev" hint-placeholder-count="5">
+            <div style="display: grid; grid-template-columns: 18px 1fr; gap: 12px; padding: 0 0 14px; position: relative">
+              <span style="{{ ev.dot }}"></span>
+              <span style="display: grid; gap: 2px">
+                <span style="font-family: var(--font-display); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--csi-mid-blue)">{{ ev.when }}</span>
+                <span style="font-family: var(--font-display); font-weight: 700; font-size: 14px; color: var(--csi-navy)">{{ ev.title }}</span>
+                <span style="font-family: var(--font-serif); font-size: 12.5px; line-height: 1.45; color: var(--csi-ink)">{{ ev.body }}</span>
+              </span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+
+      <div style="background: var(--csi-navy); color: var(--csi-white); border-radius: 12px; padding: 22px; display: grid; gap: 12px; align-content: start; min-width: 0">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px">
+          <p style="font-family: var(--font-display); font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--csi-sky-blue); margin: 0">Ask CSI, any hour</p>
+          <span style="font-family: var(--font-display); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--csi-white); background: rgba(255,255,255,0.12); border-radius: 999px; padding: 3px 8px">AI · Reviewed by your team</span>
+        </div>
+        <div style="display: grid; gap: 8px">
+          <div style="justify-self: end; max-width: 90%; background: var(--csi-light-blue); color: var(--csi-white); border-radius: 10px 10px 2px 10px; padding: 10px 12px; font-family: var(--font-serif); font-size: 13.5px; line-height: 1.5">If we convert $40,000 to a Roth this year, what happens to our Medicare premium?</div>
+          <div style="justify-self: start; max-width: 92%; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16); border-radius: 10px 10px 10px 2px; padding: 10px 12px; font-family: var(--font-serif); font-size: 13.5px; line-height: 1.5; color: rgba(255,255,255,0.92)">Based on your 2025 return, a $40,000 conversion keeps you under the next IRMAA bracket by about $6,200. I have flagged this for Dana to confirm before year end.</div>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center; background: var(--csi-white); border-radius: 8px; padding: 6px 6px 6px 14px">
+          <span style="flex: 1; font-family: var(--font-serif); font-size: 13.5px; color: var(--csi-disclosure)">Ask about your plan, your return, your accounts…</span>
+          <span style="width: 32px; height: 32px; border-radius: 6px; background: var(--csi-navy); color: var(--csi-white); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 800">›</span>
+        </div>
+        <div style="display: grid; gap: 6px; margin-top: 4px">
+          <span style="font-family: var(--font-display); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--csi-sky-blue)">Refer a family</span>
+          <span style="font-family: var(--font-serif); font-size: 13.5px; line-height: 1.5; color: rgba(255,255,255,0.9)">Two families you referred joined this year. Thank you, Maria.</span>
+          <button style="justify-self: start; font-family: var(--font-display); font-weight: 700; font-size: 12px; color: var(--csi-white); background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); border-radius: 6px; padding: 8px 12px; cursor: pointer" style-hover="background: rgba(255,255,255,0.2)">Refer someone ›</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;compact&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Layout&quot;}}">
+class Component extends DCLogic {
+  state = { nav: 'Home', range: '1Y' };
+  renderVals() {
+    const compact = (this.props.compact ?? false);
+    const score = 74;
+    const navItems = ['Home', 'Accounts', 'Plan', 'Taxes', 'Documents', 'My Team'];
+    const pillarsRaw = [['Tax', 82], ['Retirement', 68], ['Investments', 74], ['Insurance', 55], ['Estate', 60], ['Cash flow', 88], ['Family', 70]];
+    const series = { '3M': [1.21, 1.22, 1.215, 1.23, 1.238, 1.2846], '1Y': [1.12, 1.15, 1.14, 1.18, 1.2, 1.19, 1.23, 1.22, 1.25, 1.26, 1.27, 1.2846], '3Y': [0.86, 0.9, 0.95, 0.93, 1.0, 1.05, 1.1, 1.12, 1.18, 1.22, 1.26, 1.2846], 'All': [0.42, 0.5, 0.56, 0.61, 0.7, 0.78, 0.86, 0.95, 1.05, 1.15, 1.22, 1.2846] };
+    const pts = series[this.state.range];
+    const min = Math.min(...pts) * 0.97, max = Math.max(...pts) * 1.02;
+    const xy = pts.map((v, i) => [i * (600 / (pts.length - 1)), 150 - ((v - min) / (max - min)) * 130]);
+    const linePath = xy.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join(' ');
+    const areaPath = linePath + ' L600 160 L0 160 Z';
+    const tool = (title, body, svg) => ({ title, body, svg: { __html: svg } });
+    return {
+      navStyle: { display: compact ? 'none' : 'flex', gap: 4, alignItems: 'center', flexWrap: 'wrap' },
+      nameStyle: { fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 14, display: compact ? 'none' : 'inline' },
+      nav: navItems.map((label) => ({ label, go: () => this.setState({ nav: label }), style: { background: this.state.nav === label ? 'rgba(255,255,255,0.12)' : 'none', border: 0, borderRadius: 6, padding: '8px 12px', cursor: 'pointer', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 13, color: this.state.nav === label ? 'var(--csi-white)' : 'rgba(255,255,255,0.78)' } })),
+      greetingDate: 'Tuesday, October 21, 2026 · Member since 2014',
+      todos: [
+        { due: 'Due Nov 15', title: 'Upload your Q3 brokerage statement', body: 'So Dana can finish the year-end tax projection.', go: () => {} },
+        { due: 'Action needed', title: 'Name a beneficiary on the new 401(k)', body: 'It currently defaults to your estate.', go: () => {} },
+        { due: 'Open enrollment', title: 'Review Medicare Part D for Mom', body: 'Plan premiums change January 1.', go: () => {} }
+      ],
+      score, scoreOffset: 314 - (314 * score) / 100,
+      pillars: pillarsRaw.map(([name, v]) => ({ name, bar: { display: 'block', height: '100%', width: v + '%', background: v < 60 ? 'var(--csi-navy)' : 'var(--csi-light-blue)' } })),
+      ranges: ['3M', '1Y', '3Y', 'All'].map((label) => ({ label, go: () => this.setState({ range: label }), style: { fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 12, padding: '6px 10px', borderRadius: 6, cursor: 'pointer', border: '1px solid ' + (this.state.range === label ? 'var(--csi-navy)' : 'var(--csi-hairline)'), background: this.state.range === label ? 'var(--csi-navy)' : 'var(--csi-white)', color: this.state.range === label ? 'var(--csi-white)' : 'var(--csi-mid-blue)' } })),
+      linePath, areaPath, gridLines: [40, 85, 130],
+      accounts: [
+        { kind: 'Checking & savings', value: '$48,210', name: 'Two accounts · linked' },
+        { kind: 'Retirement', value: '$612,400', name: '401(k), two IRAs' },
+        { kind: 'Brokerage', value: '$188,900', name: 'Managed by CSI' },
+        { kind: 'Home equity', value: '$435,000', name: 'Est. value less mortgage' },
+        { kind: '529 plans', value: '$61,300', name: 'Sofia and Luis' }
+      ],
+      team: [
+        { initials: 'DM', name: 'Dana Morales, EA', role: 'Lead advisor · your tax professional', avatar: this.avatar(true) },
+        { initials: 'RK', name: 'Robert Kim, CPA', role: 'Senior advisor', avatar: this.avatar(false) },
+        { initials: 'AP', name: 'Anita Patel, CFP\u00ae', role: 'Financial advisor', avatar: this.avatar(false) },
+        { initials: 'JL', name: 'Jordan Lee, Esq.', role: 'Attorney', avatar: this.avatar(false) },
+        { initials: 'TB', name: 'Tasha Brown', role: 'Member services', avatar: this.avatar(false) }
+      ],
+      tools: [
+        tool('Retirement income', 'Can we retire at 62? Your accounts, Social Security and taxes, year by year.', '<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>'),
+        tool('Tax projection', 'Your estimated 2026 bill today, and what each move does to it.', '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8"/><path d="M8 17h5"/>'),
+        tool('Roth conversion', 'How much to convert this year without jumping a bracket.', '<path d="M3 3v18h18"/><path d="m7 15 4-4 4 3 5-6"/>'),
+        tool('Social Security timing', '62, 67 or 70, for each of you, with survivor benefits.', '<path d="M8 2v4"/><path d="M16 2v4"/><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18"/>'),
+        tool('College savings', 'Are the 529s on track for Sofia in 2029 and Luis in 2032?', '<path d="M21.4 10.6 12 5 2.6 10.6 12 16.2z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/>'),
+        tool('Insurance gap', 'What your family would need if one income stopped tomorrow.', '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/>'),
+        tool('Estate checkup', 'Beneficiaries, titles and documents, checked against your will.', '<path d="M12 3v18"/><path d="M5 7h14"/><path d="m5 7-3 7a3 3 0 0 0 6 0z"/><path d="m19 7-3 7a3 3 0 0 0 6 0z"/>'),
+        tool('Cash flow & debt', 'Where the money goes each month, and the fastest payoff order.', '<rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/>')
+      ],
+      docs: [
+        { ext: 'PDF', name: '2025 Federal & NJ return', meta: 'Filed Apr 2 · signed', status: 'Filed', tag: this.tag('Filed') },
+        { ext: 'PDF', name: 'Financial Health Report, Sept 2026', meta: 'From your CSI360\u2122 review', status: 'New', tag: this.tag('New') },
+        { ext: 'DOC', name: 'Last Will & Testament (Maria)', meta: 'Signed Jun 2024 · in vault', status: 'Current', tag: this.tag('Current') },
+        { ext: 'PDF', name: 'Q3 brokerage statement', meta: 'Requested by Dana', status: 'Needed', tag: this.tag('Needed') }
+      ],
+      timeline: [
+        { when: 'Done · Sept', title: 'CSI360\u2122 Financial Checkup', body: 'Score 74. Three priorities set.', dot: this.dot('done') },
+        { when: 'Nov 4', title: 'Year-end tax moves with Dana', body: 'Roth conversion amount, harvesting, charitable gifts.', dot: this.dot('next') },
+        { when: 'Dec', title: 'Medicare review for Mom', body: 'With our licensed insurance specialist.', dot: this.dot('') },
+        { when: 'Jan', title: 'Organizer and document checklist', body: 'Pre-filled from last year. Upload as they arrive.', dot: this.dot('') },
+        { when: 'Mar', title: 'Return review and signing', body: 'Video or in person at Wall Township.', dot: this.dot('') }
+      ],
+      btnFull: { style: { width: '100%' } }
+    };
+  }
+  avatar(lead) { return { width: 40, height: 40, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 13, background: lead ? 'var(--csi-light-blue)' : 'var(--csi-navy)', color: 'var(--csi-white)', border: lead ? '2px solid var(--csi-navy)' : '2px solid var(--csi-light-blue)' }; }
+  tag(s) { const need = s === 'Needed', nw = s === 'New'; return { fontFamily: 'var(--font-display)', fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '4px 8px', borderRadius: 999, whiteSpace: 'nowrap', background: need ? 'var(--csi-navy)' : nw ? 'var(--csi-light-blue)' : 'var(--csi-light-gray)', color: need || nw ? 'var(--csi-white)' : 'var(--csi-mid-blue)' }; }
+  dot(k) { return { width: 14, height: 14, borderRadius: '50%', marginTop: 3, background: k === 'done' ? 'var(--csi-light-blue)' : k === 'next' ? 'var(--csi-navy)' : 'var(--csi-white)', border: '2px solid ' + (k ? 'var(--csi-light-blue)' : 'var(--csi-hairline)'), boxShadow: k === 'next' ? '0 0 0 4px rgba(74,159,212,0.25)' : 'none', justifySelf: 'center' }; }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+/* Page-level base. The design tokens and component styles come from the Claude Design export
+   (src/ds/tokens.css and src/site/*.generated.css). No CSS reset is applied here on purpose, so the
+   site renders exactly as the design does. Everything below is a small, additive layer. */
+body {
+  margin: 0;
+  background: var(--csi-white);
+}
+
+/* ---- Skip link (visible only when focused) ---- */
+.csi-skip {
+  position: absolute;
+  left: 12px;
+  top: -64px;
+  z-index: 200;
+  padding: 10px 16px;
+  background: var(--csi-navy);
+  color: var(--csi-white);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 6px;
+}
+.csi-skip:focus {
+  top: 12px;
+  color: var(--csi-white);
+}
+
+/* ---- Small screens: the design's header overflows below ~480px, which pushes the Menu button
+   and the Member Login button off screen. Let the utility bar wrap and tighten the header row. ---- */
+@media (max-width: 520px) {
+  [data-csi="util-actions"] {
+    flex-wrap: wrap;
+    gap: 8px 16px !important;
+  }
+  [data-csi="header-row"] {
+    gap: 6px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+  [data-csi="header-row"] > [data-csi="gap10"] {
+    gap: 6px !important;
+  }
+  [data-csi="header-row"] > button img {
+    height: 18px !important;
+  }
+  [data-csi="header-row"] > [data-csi="gap10"] button {
+    padding: 9px 8px !important;
+    font-size: 12px !important;
+    gap: 6px !important;
+  }
+}
+
+/* ---- Branch map (Locations page) ---- */
+.csi-map-pin {
+  background: none;
+  border: 0;
+  filter: drop-shadow(0 3px 4px rgba(30, 58, 95, 0.35));
+}
+.leaflet-container {
+  font-family: var(--font-serif);
+  background: var(--csi-light-gray);
+}
+.leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  border-top: 3px solid var(--csi-light-blue);
+  box-shadow: 0 14px 34px rgba(30, 58, 95, 0.22);
+}
+.leaflet-popup-content {
+  margin: 14px 16px 14px 16px;
+}
+.csi-map-bubble {
+  min-width: 190px;
+}
+.csi-map-bubble-title {
+  margin: 0 0 4px !important;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 1.2;
+  color: var(--csi-navy);
+}
+.csi-map-bubble-text {
+  margin: 0 0 8px !important;
+  font-family: var(--font-serif);
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--csi-ink);
+}
+.csi-map-bubble-row {
+  margin: 0 !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+}
+.csi-map-bubble-link {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--csi-mid-blue);
+  text-decoration: none;
+}
+.csi-map-bubble-link:hover {
+  text-decoration: underline;
+}
+
+/* ---- Motion ---- */
+/* Press feedback: the interface should feel like it heard the click. */
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+button:active:not(:disabled) {
+  transform: scale(0.97);
+}
+button:not([style*="transition"]) {
+  transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Page changes: the design's 320ms fade-up, shortened so moving between pages stays quick. */
+section[data-reveal] {
+  animation-duration: 260ms !important;
+}
+
+/* Entrances for the menu and the two floating panels, which previously appeared instantly.
+   Short, ease-out, never from nothing. (@starting-style: browsers without it show them instantly.) */
+[role="menu"] {
+  transition:
+    opacity 160ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 160ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+[data-csi="chat-panel"],
+[role="dialog"][aria-label="Tell us where you are stuck"] {
+  transform-origin: bottom right;
+  transition:
+    opacity 180ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 180ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+@starting-style {
+  [role="menu"] {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  [data-csi="chat-panel"],
+  [role="dialog"][aria-label="Tell us where you are stuck"] {
+    opacity: 0;
+    transform: scale(0.96) translateY(8px);
+  }
+}
+
+/* Reduced motion: keep the fade (it explains that content arrived), drop the movement. */
+@keyframes csiFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  section[data-reveal] {
+    animation: csiFade 200ms ease both !important;
+  }
+  button:active:not(:disabled) {
+    transform: none;
+  }
+  [style*="stroke-dashoffset"] {
+    transition: none !important;
+  }
+  @starting-style {
+    [role="menu"],
+    [data-csi="chat-panel"],
+    [role="dialog"][aria-label="Tell us where you are stuck"] {
+      opacity: 0;
+      transform: none;
+    }
+  }
+}
+
+/* Phone pass: keep wide auto-fit grids inside the screen and lift tiny labels to a readable size. */
+@media (max-width: 640px) {
+  [style*="minmax(300px"], [style*="minmax(320px"], [style*="minmax(340px"], [style*="minmax(360px"], [style*="minmax(380px"], [style*="minmax(400px"] {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+  [style*="font-size:9px"], [style*="font-size:10px"], [style*="font-size:11px"],
+  [style*="font-size: 9px"], [style*="font-size: 10px"], [style*="font-size: 11px"] {
+    font-size: 12px !important;
+  }
+  [style*="font-size:12px"], [style*="font-size: 12px"] { font-size: 13px !important; }
+  a, button { min-height: 0; }
+}
+
+/* Tablet and phone pass 2: calmer top strip, readable hero tagline, bigger touch targets, no tiny text. */
+@media (max-width: 1024px) {
+  :root { --text-disclosure: 13px; }
+  [data-csi="hero-tagline"] p { color: #e3f1fb !important; }
+}
+@media (max-width: 640px) {
+  [data-csi="util-about"], [data-csi="util-ask"], [data-csi="util-health"] { display: none !important; }
+  [style*="clamp(9px"], [style*="clamp(10px"], [style*="clamp(11px"] { font-size: 12px !important; }
+  [style*="font-size:12px"] { font-size: 13px !important; }
+}
+@media (pointer: coarse) {
+  button, [role="button"] { min-height: 44px; }
+  footer button { min-height: 40px; padding-block: 8px; }
+  footer :not(p) > a { display: inline-block; padding-block: 10px; }
+}
+
+/* On phones the help pill shrinks to "Help" so it stops covering text. */
+@media (max-width: 640px) {
+  [data-csi="stuck-label"] { font-size: 0 !important; }
+  [data-csi="stuck-label"]::before { content: "Help"; font-size: 15px; }
+}

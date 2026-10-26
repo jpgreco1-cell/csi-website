@@ -1,0 +1,30 @@
+
+    body { margin: 0; background: var(--csi-white); }
+    @keyframes csiScoreLand { 0% { transform: scale(0.94); opacity: 0.7 } 62% { transform: scale(1.05) } 100% { transform: scale(1); opacity: 1 } }
+    @keyframes csiRise { from { opacity: 0; transform: translateY(12px) } to { opacity: 1; transform: none } }
+    section[data-reveal] { animation: csiRise 320ms cubic-bezier(0.16, 0.9, 0.3, 1) both; }
+    a { color: var(--csi-mid-blue); text-decoration: none; }
+    a:hover { color: var(--csi-light-blue); }
+  
+@media (hover: hover) and (pointer: fine) { .scp0:hover { color: var(--csi-sky-blue) !important } }
+@media (hover: hover) and (pointer: fine) { .scp1:hover { background: var(--csi-sky-blue) !important; border-color: var(--csi-sky-blue) !important } }
+@media (hover: hover) and (pointer: fine) { .scp2:hover { background: rgba(255,255,255,0.12) !important } }
+@media (hover: hover) and (pointer: fine) { .scp3:hover { background: var(--csi-light-gray) !important } }
+@media (hover: hover) and (pointer: fine) { .scp4:hover { color: var(--csi-mid-blue) !important } }
+@media (hover: hover) and (pointer: fine) { .scp5:hover { border-color: var(--csi-light-blue) !important } }
+@media (hover: hover) and (pointer: fine) { .scp6:hover { transform: translateY(-2px) !important; background: var(--csi-light-gray) !important; box-shadow: 0 20px 44px rgba(10,24,42,0.42) !important } }
+@media (hover: hover) and (pointer: fine) { .scp7:hover { transform: translateY(-2px) !important; background: var(--csi-light-gray) !important } }
+@media (hover: hover) and (pointer: fine) { .scp8:hover { transform: translateY(-2px) !important; background: var(--csi-mid-blue) !important } }
+@media (hover: hover) and (pointer: fine) { .scp9:hover { color: var(--csi-light-blue) !important } }
+@media (hover: hover) and (pointer: fine) { .scpa:hover { transform: translateY(-3px) !important; box-shadow: 0 18px 38px rgba(30,58,95,0.15) !important } }
+@media (hover: hover) and (pointer: fine) { .scpb:hover { background: var(--csi-light-blue-12) !important; border-color: var(--csi-light-blue-24) !important } }
+@media (hover: hover) and (pointer: fine) { .scpc:hover { color: var(--csi-white) !important } }
+@media (hover: hover) and (pointer: fine) { .scpd:hover { box-shadow: 0 14px 34px rgba(30,58,95,0.15) !important } }
+@media (hover: hover) and (pointer: fine) { .scpe:hover { box-shadow: 0 14px 34px rgba(30,58,95,0.14) !important } }
+.scpf:focus { border-color: var(--csi-light-blue) !important }
+@media (hover: hover) and (pointer: fine) { .scpg:hover { background: rgba(255,255,255,0.14) !important } }
+@media (hover: hover) and (pointer: fine) { .scph:hover { color: var(--csi-navy) !important } }
+@media (hover: hover) and (pointer: fine) { .scpi:hover { border-color: var(--csi-light-blue) !important; background: var(--csi-light-blue-12) !important } }
+.scpj:focus { border-color: var(--csi-light-blue) !important; box-shadow: 0 0 0 3px rgba(74,159,212,0.18) !important }
+@media (hover: hover) and (pointer: fine) { .scpk:hover { background: var(--csi-navy-90) !important; box-shadow: 0 16px 40px rgba(30,58,95,0.38) !important } }
+@media (hover: hover) and (pointer: fine) { .scpl:hover { background: var(--csi-light-blue-12) !important } }

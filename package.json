@@ -1,0 +1,32 @@
+{
+    "name": "csi-website",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "eslint",
+        "predev": "node scripts/scan-videos.mjs",
+        "prebuild": "node scripts/scan-videos.mjs",
+        "photos:check": "node scripts/check-photos.mjs"
+    },
+    "dependencies": {
+        "leaflet": "^1.9.4",
+        "next": "16.4.2",
+        "react": "19.3.0",
+        "react-dom": "19.3.0"
+    },
+    "devDependencies": {
+        "@tailwindcss/turbopack": "^4",
+        "@types/leaflet": "^1.9.22",
+        "@types/node": "^20",
+        "@types/react": "^19",
+        "@types/react-dom": "^19",
+        "eslint": "^9",
+        "eslint-config-next": "16.4.2",
+        "parse5": "^8.0.1",
+        "tailwindcss": "^4",
+        "typescript": "^5"
+    }
+}

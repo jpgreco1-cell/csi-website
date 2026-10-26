@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/tokens/base.css">
+  <link rel="stylesheet" href="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/styles.css">
+  <script src="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/_ds_bundle.js"></script>
+  <style>
+    body { margin: 0; background: #FFFFFF; }
+    a { color: #2E5F8A; } a:hover { color: #4A9FD4; }
+  </style>
+</helmet>
+<div data-screen-label="Leadership" style="font-family: var(--font-serif); color: var(--csi-ink); background: var(--csi-white)">
+
+  <header style="background: var(--csi-navy); border-bottom: 3px solid var(--csi-light-blue); padding: 18px clamp(20px, 5vw, 40px); display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+    <img src="assets/logos/CSIGroupLogo_2025_white.png" alt="CSI Group" style="height: 32px; width: auto; display: block">
+    <p style="font-family: var(--font-display); font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--csi-sky-blue); margin: 0">Leadership · Not linked from the public site</p>
+  </header>
+
+  <section style="background: var(--csi-navy); color: var(--csi-white); padding: clamp(84px, 9vw, 130px) clamp(20px, 5vw, 40px) clamp(92px, 10vw, 140px)">
+    <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 560px), 1fr)); gap: clamp(32px, 5vw, 72px); align-items: end">
+      <div>
+        <p style="font-family: var(--font-display); font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--csi-sky-blue); margin: 0 0 20px">Leadership</p>
+        <h1 style="font-family: Georgia, 'Times New Roman', serif; font-weight: 700; font-size: clamp(32px, 4.2vw, 56px); line-height: 1.06; letter-spacing: -0.01em; margin: 0 0 22px; color: var(--csi-white); max-width: 20ch; text-wrap: balance">Fifty-three years of building the firm the middle class was never offered.</h1>
+        <p style="font-family: var(--font-display); font-weight: 300; font-size: clamp(18px, 1.9vw, 22px); line-height: 1.5; color: rgba(255,255,255,0.9); margin: 0; max-width: 56ch">CSI Group® is a second-generation, family-owned financial services platform: tax, wealth management, legal and insurance delivered as one integrated service to 22,000+ member households across 20 branches in New Jersey and New York. This is the team that runs it.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; border-left: 1px solid rgba(255,255,255,0.18)">
+        <sc-for list="{{ stats }}" as="s" hint-placeholder-count="6">
+          <div style="padding: 18px 22px; border-bottom: 1px solid rgba(255,255,255,0.12); border-right: 1px solid rgba(255,255,255,0.12)">
+            <p style="font-family: var(--font-display); font-weight: 800; font-size: clamp(26px, 3vw, 36px); line-height: 1; color: var(--csi-white); margin: 0 0 6px">{{ s.figure }}</p>
+            <p style="font-family: var(--font-serif); font-size: 14px; line-height: 1.45; color: rgba(255,255,255,0.82); margin: 0">{{ s.label }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: var(--csi-white); padding: clamp(84px, 9vw, 124px) clamp(20px, 5vw, 40px)">
+    <div style="max-width: 1200px; margin: 0 auto">
+      <div style="max-width: 760px; margin: 0 0 clamp(44px, 5vw, 64px)">
+        <p style="font-family: var(--font-display); font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--csi-mid-blue); margin: 0 0 18px">Co-Chief Executive Officers</p>
+        <h2 style="font-family: Georgia, 'Times New Roman', serif; font-weight: 700; font-size: clamp(28px, 4vw, 44px); line-height: 1.1; color: var(--csi-navy); margin: 0 0 16px; text-wrap: pretty">Second-generation operators. First-generation thinking.</h2>
+        <p style="font-family: var(--font-serif); font-size: 18px; line-height: 1.68; color: var(--csi-ink); margin: 0">James and Robert Greco grew up inside the practice their father, Peter Greco, opened in Brooklyn in 1973. They have spent their careers turning a neighborhood tax office into an integrated financial care platform, and they still run it as owner-operators with their names on the door.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: clamp(24px, 3vw, 40px)">
+        <sc-for list="{{ ceos }}" as="c" hint-placeholder-count="2">
+          <article style="background: var(--csi-white); border: 1px solid var(--csi-hairline); border-top: 3px solid var(--csi-light-blue); border-radius: 12px; box-shadow: 0 14px 40px rgba(30,58,95,0.10); overflow: hidden; display: grid; grid-template-columns: minmax(0, 1fr)">
+            <div style="display: grid; grid-template-columns: 148px minmax(0, 1fr); gap: 24px; padding: clamp(24px, 3vw, 36px); align-items: start">
+              <div style="position: relative; width: 148px; aspect-ratio: 4 / 5; border-radius: 10px; overflow: hidden; background: var(--csi-light-gray)">
+                <image-slot id="{{ c.slotId }}" shape="rect" fit="cover" style="position: absolute; inset: 0; display: block; width: 100%; height: 100%" placeholder="{{ c.photoNote }}"></image-slot>
+              </div>
+              <div style="display: grid; gap: 10px; align-content: start">
+                <h3 style="font-family: Georgia, 'Times New Roman', serif; font-weight: 700; font-size: clamp(24px, 2.6vw, 30px); line-height: 1.1; color: var(--csi-navy); margin: 0">{{ c.name }}</h3>
+                <p style="font-family: var(--font-display); font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--csi-mid-blue); margin: 0">{{ c.title }}</p>
+                <p style="font-family: var(--font-serif); font-style: italic; font-size: 17px; line-height: 1.5; color: var(--csi-light-blue); margin: 4px 0 0">{{ c.quote }}</p>
+              </div>
+            </div>
+            <div style="padding: 0 clamp(24px, 3vw, 36px) clamp(24px, 3vw, 36px); display: grid; gap: 14px">
+              <sc-for list="{{ c.paras }}" as="pg" hint-placeholder-count="3">
+                <p style="font-family: var(--font-serif); font-size: 16.5px; line-height: 1.68; color: var(--csi-ink); margin: 0">{{ pg }}</p>
+              </sc-for>
+              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px">
+                <sc-for list="{{ c.focus }}" as="f" hint-placeholder-count="4">
+                  <span style="font-family: var(--font-display); font-size: 12px; font-weight: 700; color: var(--csi-navy); background: var(--csi-light-gray); border: 1px solid var(--csi-hairline); border-radius: 999px; padding: 6px 12px">{{ f }}</span>
+                </sc-for>
+              </div>
+            </div>
+          </article>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: var(--csi-light-gray); padding: clamp(84px, 9vw, 124px) clamp(20px, 5vw, 40px)">
+    <div style="max-width: 1200px; margin: 0 auto">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: clamp(28px, 4vw, 64px); align-items: start; margin: 0 0 clamp(44px, 5vw, 64px)">
+        <div>
+          <p style="font-family: var(--font-display); font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--csi-mid-blue); margin: 0 0 18px">Executive leadership team</p>
+          <h2 style="font-family: Georgia, 'Times New Roman', serif; font-weight: 700; font-size: clamp(28px, 4vw, 44px); line-height: 1.1; color: var(--csi-navy); margin: 0; text-wrap: pretty">Built like an institution. Run like a family business.</h2>
+        </div>
+        <p style="font-family: var(--font-serif); font-size: 18px; line-height: 1.68; color: var(--csi-ink); margin: 0">Revenue, law, operations, advisory, finance, program management, people and technology each have a dedicated executive. Behind them sit more than 80 licensed professionals organized into CSI360™ Teams, each one accountable to a book of member households for life.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr)); gap: 18px">
+        <sc-for list="{{ execs }}" as="e" hint-placeholder-count="10">
+          <article style="background: var(--csi-white); border: 1px solid var(--csi-hairline); border-top: 3px solid var(--csi-light-blue); border-radius: 12px; box-shadow: 0 8px 24px rgba(30,58,95,0.07); padding: 22px 22px 20px; display: grid; gap: 12px; align-content: start">
+            <div style="display: flex; align-items: center; gap: 14px">
+              <div style="position: relative; width: 64px; height: 64px; border-radius: 50%; overflow: hidden; background: var(--csi-navy); flex: 0 0 64px; border: 2px solid var(--csi-light-blue); display: flex; align-items: center; justify-content: center">
+                <span style="font-family: Georgia, 'Times New Roman', serif; font-weight: 700; font-size: 20px; color: var(--csi-white)">{{ e.initials }}</span>
+              </div>
+              <div style="display: grid; gap: 3px; min-width: 0">
+                <h3 style="font-family: var(--font-display); font-weight: 800; font-size: 17px; line-height: 1.2; color: var(--csi-navy); margin: 0">{{ e.name }}</h3>
+                <p style="font-family: var(--font-display); font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--csi-mid-blue); margin: 0">{{ e.title }}</p>
+              </div>
+            </div>
+            <p style="font-family: var(--font-serif); font-size: 14.5px; line-height: 1.6; color: var(--csi-ink); margin: 0">{{ e.body }}</p>
+          </article>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: var(--csi-white); padding: clamp(84px, 9vw, 124px) clamp(20px, 5vw, 40px)">
+    <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px">
+      <sc-for list="{{ platform }}" as="p" hint-placeholder-count="4">
+        <div style="border: 1px solid var(--csi-hairline); border-left: 3px solid var(--csi-light-blue); border-radius: 12px; padding: 26px 24px; display: grid; gap: 10px; align-content: start">
+          <p style="font-family: var(--font-display); font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--csi-mid-blue); margin: 0">{{ p.k }}</p>
+          <h3 style="font-family: var(--font-display); font-weight: 800; font-size: 20px; line-height: 1.22; color: var(--csi-navy); margin: 0">{{ p.title }}</h3>
+          <p style="font-family: var(--font-serif); font-size: 15.5px; line-height: 1.62; color: var(--csi-ink); margin: 0">{{ p.body }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <footer style="background: var(--csi-navy); color: var(--csi-white); padding: 36px clamp(20px, 5vw, 40px)">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+      <img src="assets/logos/CSIGroupLogo_2025_white.png" alt="CSI Group" style="height: 28px; width: auto; display: block">
+      <p style="font-family: var(--font-serif); font-size: 14px; color: rgba(255,255,255,0.8); margin: 0">Corporate inquiries: joinus@csicpa.com · 1599 NJ-34, Wall Township, NJ 07727</p>
+      <p style="font-family: var(--font-display); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin: 0">CSI Group® · Confidence · Service · Integrity</p>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const execs = [
+      ['Ken Grasso', 'Chief Revenue Officer', 'Owns growth across all 20 branches: new-member acquisition, the referral engine that drives it, and the pricing and packaging of membership.'],
+      ['Casey Burns', 'Director, CSI Group Law Firm P.C.', 'Leads the in-house law firm. Wills, trusts, probate and estate administration for member families in New Jersey and New York, integrated with their tax and financial plans.'],
+      ['John Chiccarello', 'Senior Advisor', 'A senior advisor to CSI360\u2122 Teams on the most complex household situations, and a mentor to the next generation of lead advisors.'],
+      ['Jack Tanari', 'Senior Advisor', 'Brings decades of planning and estate experience to member families and leads the firm\u2019s estate-planning education for members.'],
+      ['Antonio Ranieri', 'Director of Operations', 'Runs the operating machine behind 20 branches and a 10-week tax season that serves more than 22,000 households, from workflow to capacity planning.'],
+      ['Anthony Pellicano', 'Director of Member Advisory', 'Leads the lead advisors. Owns the CSI360\u2122 Team model, advisor standards, and the member experience from first call to annual checkup.'],
+      ['John Santa Maria', 'Chief Financial Officer', 'Stewards the firm\u2019s finances, reporting and capital planning across its operating entities, with the discipline you would expect of a 50-year-old business.'],
+      ['Genevieve Denaro', 'Program Management Office', 'Turns strategy into shipped programs: the CSI360\u2122 rollout, the member portal roadmap and cross-functional launches, on schedule and measured.'],
+      ['Brian Batcher', 'Chief People Officer', 'Builds the team of 80+ licensed professionals, from recruiting and credentialing to the culture that keeps advisors with member families for decades.'],
+      ['Joe Mercies', 'Chief Technology Officer', 'Leads the technology platform: the member portal, data and integrations, security, and the AI tools that extend each CSI360\u2122 Team.']
+    ].map(([name, title, body], i) => ({ name, title, body, initials: name.split(' ').map((w) => w[0]).slice(0, 2).join(''), slotId: 'exec-' + i, slotOpacity: 1 }));
+    return {
+      stats: [
+        { figure: '1973', label: 'Founded in Brooklyn by Peter Greco' },
+        { figure: '2nd', label: 'Generation of family ownership' },
+        { figure: '20', label: 'Branches across NJ and NY' },
+        { figure: '22,000+', label: 'Member households served every year' },
+        { figure: '80+', label: 'Licensed professionals: CPAs, EAs, CFP\u00ae, attorneys, insurance' },
+        { figure: '4', label: 'Integrated service lines under one roof' }
+      ],
+      ceos: [
+        { name: 'James Greco', title: 'Co-Chief Executive Officer', slotId: 'ceo-james', photoNote: 'Portrait: James Greco', quote: '\u201cFinancial services were built fragmented, and reserved for the ultra-wealthy. We built the opposite.\u201d',
+          paras: [
+            'James Greco is a second-generation leader of CSI Group and one of the industry\u2019s clearest voices on integrated financial care for middle-class families. He grew up in the Brooklyn tax practice his father opened in 1973, and he has spent his career answering one question: why should a family need four separate professionals, in four separate offices, to manage one financial life?',
+            'His answer became CSI360\u2122, the seven-pillar financial checkup at the center of membership, and the CSI360\u2122 Team model that pairs every household with a lead advisor, senior advisor, financial advisor, attorney and member services rep for life. Under his leadership the firm has grown from a neighborhood office into 20 branches serving more than 22,000 households.',
+            'James leads strategy, brand and the member experience. Financial care is in his DNA, and reinventing how it is delivered to working families has been the drive of his career for more than two decades.'
+          ],
+          focus: ['Strategy and vision', 'CSI360\u2122 model', 'Brand and member experience', 'Industry partnerships'] },
+        { name: 'Robert M. Greco', title: 'Co-Chief Executive Officer', slotId: 'ceo-robert', photoNote: 'Portrait: Robert M. Greco', quote: '\u201cThe families nobody else was focused on deserve the best-run firm in the business.\u201d',
+          paras: [
+            'Robert M. Greco is a second-generation owner-operator of CSI Group and the architect of the operating platform behind it. Raised in the family practice, he learned the business from the preparer\u2019s chair before building the systems, teams and disciplines that let a 50-year-old firm scale without losing the kitchen-table relationship it was founded on.',
+            'He has led the expansion of the firm\u2019s service lines, from tax into wealth management, an in-house law firm and insurance, and the integration of the four into one coordinated plan per household. His focus on execution, compliance and repeatable quality is why CSI Group can serve 22,000 households through a 10-week tax season and still know every family by name.',
+            'Robert leads operations, finance, growth and the professional organization. For him, reinventing financial care for the middle class is not a campaign but a family mission, carried into its second generation and built to outlast it.'
+          ],
+          focus: ['Operations and scale', 'Service-line integration', 'Growth and M&A', 'Professional standards'] }
+      ],
+      execs,
+      platform: [
+        { k: 'Model', title: 'One household, one integrated plan', body: 'Tax, wealth, legal and insurance delivered by a single accountable team. Membership begins with any one service; the CSI360\u2122 Checkup ties them together.' },
+        { k: 'Distribution', title: 'Twenty community branches', body: 'Physical presence in 18 New Jersey and 2 New York communities, with virtual service layered on top. The branch is the relationship; the platform is the leverage.' },
+        { k: 'Economics', title: 'Recurring, multi-generational relationships', body: 'Members stay for decades and their children become members. Growth this year is referral-led, which says what the families themselves think of the firm.' },
+        { k: 'Platform', title: 'A member portal that compounds', body: 'Accounts, Financial Health Score, documents, calculators and direct access to the team in one sign-in, with AI assistance reviewed by licensed professionals.' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

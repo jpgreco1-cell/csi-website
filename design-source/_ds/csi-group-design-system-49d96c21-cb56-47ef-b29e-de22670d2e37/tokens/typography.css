@@ -1,0 +1,41 @@
+/* CSI Group — Typography tokens
+   Montserrat for structure. Lora for warmth.
+   Headlines: Montserrat 800–900. Subheads: Montserrat 300–400 (lighter weight makes the contrast).
+   Body: Lora 400. Taglines & signatures: Lora italic, light blue. Disclosure: 6–7pt. */
+:root {
+  /* ---- Families ---- */
+  --font-display: 'Montserrat', system-ui, sans-serif;   /* headlines, subheads, UI, disclosure */
+  --font-serif: 'Lora', Georgia, 'Times New Roman', serif; /* body, taglines, signatures */
+
+  /* ---- Weights ---- */
+  --weight-light: 300;     /* subheads */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-heavy: 800;     /* headlines */
+  --weight-black: 900;     /* hero headlines */
+
+  /* ---- Type scale (screen, 1200px landing / 1280px slide context) ---- */
+  --text-hero: 64px;       /* Montserrat 900 — hero headline */
+  --text-h1: 44px;         /* Montserrat 800 */
+  --text-h2: 32px;         /* Montserrat 800 */
+  --text-h3: 24px;         /* Montserrat 700 */
+  --text-subhead: 22px;    /* Montserrat 300 — the light counterweight */
+  --text-lead: 20px;       /* Lora 400 lead paragraph */
+  --text-body: 17px;       /* Lora 400 body */
+  --text-small: 14px;      /* Montserrat 400 labels / UI */
+  --text-eyebrow: 12px;    /* Montserrat 600, tracked, uppercase section label */
+  --text-disclosure: 11px; /* ~7pt disclosure */
+
+  /* ---- Line heights ---- */
+  --leading-tight: 1.04;   /* hero / headlines */
+  --leading-snug: 1.2;     /* subheads */
+  --leading-body: 1.6;     /* Lora body — comfortable reading */
+  --leading-disclosure: 1.45;
+
+  /* ---- Letter spacing ---- */
+  --tracking-eyebrow: 0.18em;  /* uppercase section labels & "CLICK TO COPY" style microtype */
+  --tracking-headline: -0.01em;
+  --tracking-normal: 0;
+}

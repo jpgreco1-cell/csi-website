@@ -1,0 +1,45 @@
+/* CSI Group — Color tokens
+   "Blue only. No gold, no charcoal, no invented palettes."
+   Four brand blues + functional neutrals. Disclosure gray is for legal text ONLY. */
+:root {
+  /* ---- Core brand blues ---- */
+  --csi-navy: #1E3A5F;        /* Primary — headlines, dark backgrounds, logo text */
+  --csi-mid-blue: #2E5F8A;    /* Secondary headers, section fills */
+  --csi-light-blue: #4A9FD4;  /* Accent — italic text, divider rules, highlights */
+  --csi-sky-blue: #7BB8D4;    /* Gradients, decorative shapes */
+
+  /* ---- Neutrals & functional ---- */
+  --csi-white: #FFFFFF;       /* Body text on dark, section backgrounds */
+  --csi-light-gray: #F4F6F8;  /* Page backgrounds, alternating sections */
+  --csi-ink: #1A1A2E;         /* Body copy on light backgrounds */
+  --csi-disclosure: #6B7280;  /* Legal / disclosure text ONLY */
+
+  /* ---- Tints derived inside the navy → sky range (for fills, borders, hovers) ---- */
+  --csi-navy-90: #2A4A72;     /* Navy hover/raised */
+  --csi-navy-80: #35567E;
+  --csi-light-blue-12: rgba(74, 159, 212, 0.12);  /* tinted accent surface */
+  --csi-light-blue-24: rgba(74, 159, 212, 0.24);  /* accent border */
+  --csi-sky-16: rgba(123, 184, 212, 0.16);
+  --csi-hairline: rgba(30, 58, 95, 0.12);          /* navy hairline on light */
+  --csi-hairline-on-navy: rgba(255, 255, 255, 0.16);
+
+  /* ---- Semantic surface aliases ---- */
+  --surface-page: var(--csi-light-gray);
+  --surface-card: var(--csi-white);
+  --surface-inverse: var(--csi-navy);
+  --surface-fill: var(--csi-mid-blue);
+
+  /* ---- Semantic text aliases ---- */
+  --text-heading: var(--csi-navy);
+  --text-body: var(--csi-ink);
+  --text-on-inverse: var(--csi-white);
+  --text-accent: var(--csi-light-blue);
+  --text-disclosure: var(--csi-disclosure);
+
+  /* ---- Borders & rules ---- */
+  --rule-accent: var(--csi-light-blue);
+  --rule-hairline: var(--csi-hairline);
+
+  /* ---- The one approved gradient: navy → sky-blue ---- */
+  --csi-gradient-brand: linear-gradient(135deg, var(--csi-navy) 0%, var(--csi-mid-blue) 55%, var(--csi-sky-blue) 100%);
+}

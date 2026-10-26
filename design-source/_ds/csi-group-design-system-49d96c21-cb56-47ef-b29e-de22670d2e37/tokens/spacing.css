@@ -1,0 +1,47 @@
+/* CSI Group — Spacing, radii, shadows, layout
+   Print-rooted brand (8.5x11, three-band structure). Restrained, document-like. */
+:root {
+  /* ---- Spacing scale (4px base) ---- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+
+  /* ---- Radii — modest. Cards and inputs are squared-off and document-like. ---- */
+  --radius-xs: 3px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+
+  /* ---- Borders ---- */
+  --border-hairline: 1px solid var(--rule-hairline);
+  --border-accent: 1px solid var(--csi-light-blue-24);
+  --rule-thin-accent: 3px solid var(--csi-light-blue);  /* the signature thin blue rule */
+
+  /* ---- Shadows — soft, cool-tinted, never heavy ---- */
+  --shadow-sm: 0 1px 2px rgba(30, 58, 95, 0.06);
+  --shadow-md: 0 4px 14px rgba(30, 58, 95, 0.08);
+  --shadow-lg: 0 14px 40px rgba(30, 58, 95, 0.12);
+  --shadow-focus: 0 0 0 3px var(--csi-light-blue-24);
+
+  /* ---- Layout ---- */
+  --page-max: 1200px;   /* landing page max width */
+  --slide-w: 1280px;    /* 16:9 slide */
+  --slide-h: 720px;
+  --band-pad-y: var(--space-9);
+  --content-pad-x: var(--space-7);
+
+  /* ---- Motion — restrained, professional. Fades & gentle eases, no bounce. ---- */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1); /* @kind other */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --dur-fast: 140ms; /* @kind other */
+  --dur-base: 220ms; /* @kind other */
+  --dur-slow: 360ms; /* @kind other */
+}

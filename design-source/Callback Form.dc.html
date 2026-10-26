@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/tokens/base.css">
+  <link rel="stylesheet" href="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/styles.css">
+  <script src="_ds/csi-group-design-system-49d96c21-cb56-47ef-b29e-de22670d2e37/_ds_bundle.js"></script>
+</helmet>
+
+<sc-if value="{{ sentOnLight }}">
+  <div style="background: var(--csi-white); border-top: 3px solid var(--csi-light-blue); border-radius: 10px; box-shadow: 0 10px 30px rgba(30,58,95,0.10); padding: 40px 36px; text-align: left">
+    <p style="font-family: var(--font-display); font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--csi-light-blue); margin: 0 0 14px">Request received</p>
+    <h3 style="font-family: var(--font-display); font-weight: 800; font-size: 28px; color: var(--csi-navy); margin: 0 0 12px; line-height: 1.15">Thank you. A member of our family will call you.</h3>
+    <p style="font-family: var(--font-serif); font-size: 17px; line-height: 1.6; color: var(--csi-ink); margin: 0 0 18px; max-width: 44ch">You will hear from a lead advisor at the office nearest you, usually the same business day. Nothing to prepare, and nothing to commit to.</p>
+    <p style="font-family: var(--font-serif); font-style: italic; font-size: 17px; color: var(--csi-light-blue); margin: 0">Whatever life brings, you'll never face it alone.</p>
+  </div>
+</sc-if>
+
+<sc-if value="{{ sentOnNavy }}">
+  <div style="background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.22); border-radius: 10px; padding: 28px 26px">
+    <p style="font-family: var(--font-display); font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--csi-sky-blue); margin: 0 0 10px">Request received</p>
+    <p style="font-family: var(--font-display); font-weight: 700; font-size: 20px; color: var(--csi-white); margin: 0 0 8px; line-height: 1.25">We will call you shortly.</p>
+    <p style="font-family: var(--font-serif); font-size: 15px; line-height: 1.6; color: rgba(255,255,255,0.86); margin: 0">A lead advisor from the office nearest you, no cost and no commitment.</p>
+  </div>
+</sc-if>
+
+<sc-if value="{{ showInline }}" hint-placeholder-val="{{ true }}">
+  <div style="background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.22); border-radius: 10px; padding: 26px 26px 24px">
+    <p style="font-family: var(--font-display); font-weight: 700; font-size: 17px; color: var(--csi-white); margin: 0 0 4px">Book your free intro call</p>
+    <p style="font-family: var(--font-serif); font-size: 14px; line-height: 1.5; color: rgba(255,255,255,0.78); margin: 0 0 18px">Two fields. A real advisor, not a call center.</p>
+    <div style="display: grid; gap: 12px">
+      <input placeholder="Your name" value="{{ name }}" onChange="{{ setName }}" style="width: 100%; box-sizing: border-box; font-family: var(--font-serif); font-size: 16px; padding: 13px 14px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.28); background: rgba(255,255,255,0.10); color: var(--csi-white); outline: none">
+      <input placeholder="Phone number" value="{{ phone }}" onChange="{{ setPhone }}" style="width: 100%; box-sizing: border-box; font-family: var(--font-serif); font-size: 16px; padding: 13px 14px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.28); background: rgba(255,255,255,0.10); color: var(--csi-white); outline: none">
+      <x-import component-from-global-scope="CSIGroupDesignSystem_49d96c.Button" variant="secondary" size="md" onClick="{{ submit }}" dc-props="{{ btnInline }}" hint-size="auto,46px">Book my free intro call</x-import>
+    </div>
+    <p style="font-family: var(--font-display); font-size: 14px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--csi-white); margin: 14px 0 0">Complimentary &amp; Commitment-Free!</p>
+  </div>
+</sc-if>
+
+<sc-if value="{{ showFull }}">
+  <div style="background: var(--csi-white); border-top: 3px solid var(--csi-light-blue); border-radius: 10px; box-shadow: 0 10px 30px rgba(30,58,95,0.10); padding: 40px 36px">
+    <p style="font-family: var(--font-display); font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--csi-light-blue); margin: 0 0 12px">{{ eyebrow }}</p>
+    <h3 style="font-family: var(--font-display); font-weight: 800; font-size: 30px; line-height: 1.14; color: var(--csi-navy); margin: 0 0 10px">{{ heading }}</h3>
+    <p style="font-family: var(--font-serif); font-size: 16px; line-height: 1.6; color: var(--csi-ink); margin: 0 0 26px; max-width: 52ch">{{ blurb }}</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px">
+      <x-import component-from-global-scope="CSIGroupDesignSystem_49d96c.Input" dc-props="{{ inputFull }}" size="1" label="Name" type="text" value="{{ name }}" onChange="{{ setName }}" placeholder="First and last" hint-size="100%,70px"></x-import>
+      <x-import component-from-global-scope="CSIGroupDesignSystem_49d96c.Input" dc-props="{{ inputFull }}" size="1" label="Phone" type="tel" value="{{ phone }}" onChange="{{ setPhone }}" placeholder="(   )" hint-size="100%,70px"></x-import>
+      <div style="grid-column: 1 / -1; min-width: 0"><x-import component-from-global-scope="CSIGroupDesignSystem_49d96c.Input" dc-props="{{ inputFull }}" size="1" label="Email" type="email" value="{{ email }}" onChange="{{ setEmail }}" placeholder="you@email.com" hint-size="100%,70px"></x-import></div>
+    </div>
+    <p style="font-family: var(--font-display); font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--csi-mid-blue); margin: 24px 0 12px">What is on your mind? Choose any.</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 9px">
+      <sc-for list="{{ chips }}" as="chip" hint-placeholder-count="6">
+        <button onClick="{{ chip.toggle }}" style="{{ chip.style }}">{{ chip.label }}</button>
+      </sc-for>
+    </div>
+    <label style="display: grid; gap: 7px; margin-top: 22px">
+      <span style="font-family: var(--font-display); font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--csi-mid-blue)">Anything you'd like us to know</span>
+      <textarea value="{{ message }}" onChange="{{ setMessage }}" rows="3" placeholder="Retiring next year, two kids, a small business, an inheritance, whatever it is." style="font-family: var(--font-serif); font-size: 16px; padding: 12px 13px; border: 1px solid var(--csi-hairline); border-radius: 4px; background: var(--csi-white); color: var(--csi-ink); outline: none; resize: vertical" style-focus="border-color: var(--csi-light-blue); box-shadow: 0 0 0 3px var(--csi-light-blue-24)"></textarea>
+    </label>
+    <div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap; margin-top: 26px">
+      <x-import component-from-global-scope="CSIGroupDesignSystem_49d96c.Button" variant="primary" size="lg" onClick="{{ submit }}" hint-size="auto,54px">Book my free intro call</x-import>
+      <p style="font-family: var(--font-serif); font-size: 14px; color: var(--csi-mid-blue); margin: 0">Or call <strong style="font-family: var(--font-display); font-weight: 700"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="0.85em" height="0.85em" style="display: inline-block; vertical-align: -0.1em; margin-right: 0.4em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>(877) 4-CSI360</strong></p>
+    </div>
+    <p style="font-family: var(--font-display); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--csi-disclosure); margin: 18px 0 0">Complimentary &amp; Commitment-Free!</p>
+  </div>
+</sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:620,&quot;height&quot;:620},&quot;variant&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;full&quot;,&quot;inline&quot;],&quot;default&quot;:&quot;full&quot;,&quot;tsType&quot;:&quot;'full' | 'inline'&quot;},&quot;eyebrow&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Request a callback&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;heading&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Let us call you.&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;blurb&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Tell us a little and a lead advisor will call.&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;preselect&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;CSI360™ Financial Checkup&quot;,&quot;Taxes&quot;,&quot;Retirement income&quot;,&quot;Investments&quot;,&quot;Wills &amp; estate&quot;,&quot;Insurance&quot;],&quot;default&quot;:null,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  state = { sent: false, name: '', phone: '', email: '', message: '', picked: [] };
+
+  componentDidMount() { if (this.props.preselect) this.setState({ picked: [this.props.preselect] }); }
+  componentDidUpdate(prev) { if (prev.preselect !== this.props.preselect && this.props.preselect) this.setState({ picked: [this.props.preselect] }); }
+
+  renderVals() {
+    const variant = this.props.variant ?? 'full';
+    const inline = variant === 'inline';
+    const set = (k) => (e) => this.setState({ [k]: e.target.value });
+    const options = ['CSI360™ Financial Checkup', 'Taxes', 'Retirement income', 'Investments', 'Wills & estate', 'Insurance'];
+    const chips = options.map((label) => {
+      const on = this.state.picked.includes(label);
+      return {
+        label,
+        toggle: () => this.setState((s) => ({
+          picked: s.picked.includes(label) ? s.picked.filter((x) => x !== label) : [...s.picked, label]
+        })),
+        style: {
+          fontFamily: 'var(--font-display)', fontSize: 14, fontWeight: on ? 700 : 400,
+          padding: '9px 16px', borderRadius: 999, cursor: 'pointer',
+          background: on ? 'var(--csi-light-blue)' : 'var(--csi-white)',
+          color: on ? 'var(--csi-white)' : 'var(--csi-mid-blue)',
+          border: on ? '1px solid var(--csi-light-blue)' : '1px solid var(--csi-light-blue-24)',
+          transition: 'background 180ms var(--ease-standard)'
+        }
+      };
+    });
+    return {
+      showInline: inline && !this.state.sent,
+      showFull: !inline && !this.state.sent,
+      sentOnNavy: this.state.sent && inline,
+      sentOnLight: this.state.sent && !inline,
+      eyebrow: this.props.eyebrow ?? 'Free intro call',
+      heading: this.props.heading ?? 'Book your free intro call.',
+      blurb: this.props.blurb ?? 'Tell us a little and a lead advisor will call, review where you stand, and tell you plainly whether we can help.',
+      name: this.state.name, phone: this.state.phone, email: this.state.email, message: this.state.message,
+      setName: set('name'), setPhone: set('phone'), setEmail: set('email'), setMessage: set('message'),
+      chips,
+      btnFull: { style: { width: '100%' } },
+      btnNowrap: { style: { whiteSpace: 'nowrap' } },
+      btnInline: { style: { whiteSpace: 'nowrap', justifySelf: 'start', maxWidth: 'calc(100% - 72px)' } },
+      inputFull: { style: { width: '100%', minWidth: 0 } },
+      submit: () => this.setState({ sent: true })
+    };
+  }
+}
+</script>
+</body>
+</html>

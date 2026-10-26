@@ -1,0 +1,75 @@
+/* CSI Group — Base element styling & utility primitives.
+   Lightweight reset + brand defaults so any consuming page inherits the voice. */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  color: var(--text-body);
+  background: var(--surface-page);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Headings — Montserrat, navy, tight */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--text-heading);
+  letter-spacing: var(--tracking-headline);
+  line-height: var(--leading-tight);
+  margin: 0 0 var(--space-4);
+  text-wrap: balance;
+}
+h1 { font-size: var(--text-h1); font-weight: var(--weight-heavy); }
+h2 { font-size: var(--text-h2); font-weight: var(--weight-heavy); }
+h3 { font-size: var(--text-h3); font-weight: var(--weight-bold); line-height: var(--leading-snug); }
+
+p { margin: 0 0 var(--space-4); text-wrap: pretty; }
+a { color: var(--csi-mid-blue); text-decoration: none; }
+a:hover { color: var(--csi-light-blue); }
+
+/* ---- Brand utility classes ---- */
+
+/* Eyebrow / section label — "0 1 — F O U N D A T I O N" microtype */
+.csi-eyebrow {
+  font-family: var(--font-display);
+  font-size: var(--text-eyebrow);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--csi-mid-blue);
+}
+
+/* Hero / headline scales */
+.csi-hero { font-family: var(--font-display); font-weight: var(--weight-black); font-size: var(--text-hero); color: var(--text-heading); line-height: var(--leading-tight); letter-spacing: var(--tracking-headline); }
+
+/* The light-weight subhead that counterweights a heavy headline */
+.csi-subhead { font-family: var(--font-display); font-weight: var(--weight-light); font-size: var(--text-subhead); color: var(--text-heading); line-height: var(--leading-snug); }
+
+/* Lora italic, light blue — taglines & brand signatures ONLY */
+.csi-tagline { font-family: var(--font-serif); font-style: italic; font-weight: var(--weight-regular); color: var(--csi-light-blue); }
+
+/* Disclosure — 6–7pt, disclosure gray */
+.csi-disclosure { font-family: var(--font-display); font-size: var(--text-disclosure); line-height: var(--leading-disclosure); color: var(--text-disclosure); font-weight: var(--weight-regular); }
+
+/* The signature thin light-blue rule */
+.csi-rule { border: 0; border-top: var(--rule-thin-accent); width: 64px; margin: var(--space-4) 0; }
+.csi-rule--full { width: 100%; border-top: 1px solid var(--rule-hairline); }
+
+/* Checkmark list — ✓ in light blue, the brand's DO marker */
+.csi-checklist { list-style: none; padding: 0; margin: 0; }
+.csi-checklist li { position: relative; padding-left: var(--space-6); margin-bottom: var(--space-3); }
+.csi-checklist li::before {
+  content: '✓';
+  position: absolute; left: 0; top: 0;
+  color: var(--csi-light-blue);
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+}
+
+/* Navy band — the brand's top/footer band */
+.csi-band-navy { background: var(--csi-navy); color: var(--csi-white); }
+.csi-band-navy h1, .csi-band-navy h2, .csi-band-navy h3 { color: var(--csi-white); }
